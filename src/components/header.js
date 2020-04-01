@@ -11,6 +11,7 @@ import {
   center,
   color
 } from '../constant/styles';
+import { FaBars } from 'react-icons/fa';
 
 const getLogo = graphql`
   query {
@@ -25,6 +26,7 @@ const getLogo = graphql`
 `;
 
 const {
+  primaryHighlight,
   secondaryBackground
 } = color;
 
@@ -34,22 +36,25 @@ const HeaderContainer = styled.div`
   color: white;
   display: flex;
   height: 87px;
-  padding: 0 5vw;
+  justify-content: space-between;
+  padding: 0 8vw;
   position: relative;
-`
+`;
 
-const ImageContainer = styled.div`
-
-`
+const StyledIcon = styled(FaBars)`
+  display: block;
+  color: ${primaryHighlight};
+  height: 30px;
+  width: 30px;
+`;
 
 const Header = (props) => {
   const { logo } = useStaticQuery(getLogo);
 
   return (
     <HeaderContainer>
-      <ImageContainer>
-        <Image fixed={logo.childImageSharp.fixed} />
-      </ImageContainer>
+      <Image fixed={logo.childImageSharp.fixed} />
+      <StyledIcon />
     </HeaderContainer>
   )
 }
