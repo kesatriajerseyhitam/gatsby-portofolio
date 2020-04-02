@@ -10,6 +10,7 @@ import links from '../../constant/links'
 import {
   HeaderContainer,
   LinkContainer,
+  InlineLinkContainer,
   StyledIcon,
 } from './styled';
 
@@ -37,15 +38,22 @@ const Header = () => {
             <AniLink fade to={link.path}>
               <li key={index}>{link.name}</li>
             </AniLink>
-
           )
         }
       </LinkContainer>
       <HeaderContainer>
         <Image fixed={logo.childImageSharp.fixed} />
         <StyledIcon />
+        <InlineLinkContainer>
+          {
+            links.map((link, index) =>
+              <AniLink fade to={link.path}>
+                <li key={index}>{link.name}</li>
+              </AniLink>
+            )
+          }
+        </InlineLinkContainer>
       </HeaderContainer>
-
     </>
   )
 }
