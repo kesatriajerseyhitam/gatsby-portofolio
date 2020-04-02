@@ -1,7 +1,7 @@
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   margin: 0;
@@ -619,4 +619,19 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+
+/* My Global CSS Reference */
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto:wght@500;700;900&display=swap');
+/* font-family: 'Passion One', cursive;
+font-family: 'Roboto', sans-serif; */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
