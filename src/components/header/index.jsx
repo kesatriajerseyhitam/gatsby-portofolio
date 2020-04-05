@@ -37,9 +37,9 @@ const Header = () => {
         toogled ? (
           <LinkContainer>
             {
-            links.map((link, index) => (
+            links.map((link) => (
               <AniLink fade to={link.path}>
-                <li key={index}>{link.name}</li>
+                <li key={link.name}>{link.name}</li>
               </AniLink>
             ))
           }
@@ -53,9 +53,9 @@ const Header = () => {
         />
         <InlineLinkContainer>
           {
-            links.map((link, index) => (
+            links.map((link) => (
               <AniLink fade to={link.path}>
-                <li key={index}>{link.name}</li>
+                <li key={link.name}>{link.name}</li>
               </AniLink>
             ))
           }
