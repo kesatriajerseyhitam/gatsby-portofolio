@@ -1,12 +1,12 @@
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import Image from 'gatsby-image'
-import React from "react"
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+import Image from 'gatsby-image';
+import React, { useState } from 'react';
 import {
   graphql,
   useStaticQuery,
-} from "gatsby"
+} from 'gatsby';
 
-import links from '../../constant/links'
+import links from '../../constant/links';
 import {
   HeaderContainer,
   LinkContainer,
@@ -28,34 +28,41 @@ const getLogo = graphql`
 
 
 const Header = () => {
+  const [toogled, setToogled] = useState(false);
   const { logo } = useStaticQuery(getLogo);
 
   return (
     <>
-      <LinkContainer>
-        {
-          links.map((link, index) =>
-            <AniLink fade to={link.path}>
-              <li key={index}>{link.name}</li>
-            </AniLink>
-          )
-        }
-      </LinkContainer>
-      <HeaderContainer>
-        <Image fixed={logo.childImageSharp.fixed} />
-        <StyledIcon />
-        <InlineLinkContainer>
-          {
-            links.map((link, index) =>
+      {
+        toogled ? (
+          <LinkContainer>
+            {
+            links.map((link, index) => (
               <AniLink fade to={link.path}>
                 <li key={index}>{link.name}</li>
               </AniLink>
-            )
+            ))
+          }
+          </LinkContainer>
+        ) : null
+      }
+      <HeaderContainer>
+        <Image fixed={logo.childImageSharp.fixed} />
+        <StyledIcon
+          onClick={() => setToogled((prevState) => !prevState)}
+        />
+        <InlineLinkContainer>
+          {
+            links.map((link, index) => (
+              <AniLink fade to={link.path}>
+                <li key={index}>{link.name}</li>
+              </AniLink>
+            ))
           }
         </InlineLinkContainer>
       </HeaderContainer>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
