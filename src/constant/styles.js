@@ -3,7 +3,7 @@ export const center = `
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-`
+`;
 
 export const color = {
   gradient: 'linear-gradient(90deg, rgba(242,148,40,1) 0%, rgba(178,37,82,1) 100%)',
@@ -15,4 +15,8 @@ export const color = {
   saga: '#89d96d',
   secondaryBackground: '#252525',
   secondaryHighlight: '#b22552',
-}
+};
+
+export const padding = {
+  mobileHorizontalPadding: '15vw',
+};

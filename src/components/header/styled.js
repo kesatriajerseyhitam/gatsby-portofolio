@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
 import { color } from '../../constant/styles';
 
@@ -49,7 +49,7 @@ export const InlineLinkContainer = styled.ul`
     display: flex;
     justify-content: space-between;
   }
-`
+`;
 
 export const LinkContainer = styled.ul`
   background: ${secondaryBackground};
@@ -80,7 +80,7 @@ export const LinkContainer = styled.ul`
   @media (min-width: 1024px) {
     display: none;
   }
-`
+`;
 
 export const StyledIcon = styled(FaBars)`
   display: block;
@@ -92,4 +92,3 @@ export const StyledIcon = styled(FaBars)`
     display: none;
   }
 `;
-
