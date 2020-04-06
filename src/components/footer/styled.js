@@ -2,38 +2,38 @@ import styled from 'styled-components';
 import { color, padding } from '../../constant/styles';
 
 const {
-  secondaryBackground,
   primaryHighlight,
+  secondaryBackground,
+  secondaryHighlight,
 } = color;
 const {
   mobileHorizontalPadding,
+  webHorizontalPadding,
 } = padding;
 
+const containerGap = '15px';
 const textCentering = `
   display: block;
   font-family: 'Roboto';
   text-align: center;
+  margin: auto 0;
   width: 100%;
 `;
 
 export const FooterContainer = styled.div`
   background: ${secondaryBackground};
-  padding: 30px ${mobileHorizontalPadding};
+  padding: 20px ${mobileHorizontalPadding};
   margin-top: auto;
-`;
 
-export const FooterCredit = styled.div`
-  margin-top: 30px;
-
-  h6 {
-    color: white;
-    ${textCentering}
+  @media (min-width: 1028px) {
+    padding: 20px ${webHorizontalPadding};
   }
 `;
 
 export const FooterTitleContainer = styled.div`
-  padding: 5px 20px;
+  padding: 0 20px 15px 20px;
   border-bottom: 2px solid ${primaryHighlight};
+
 
   h2 {
     ${textCentering};
@@ -42,5 +42,41 @@ export const FooterTitleContainer = styled.div`
     letter-spacing: 5px;
   }
 `;
+
+export const FooterLinksContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: ${containerGap};
+  padding: 0px 10px;
+  width: 100%;
+`;
+
+export const LinkContainer = styled.a`
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 10px 0px;
+  text-align: center;
+  width: 33%;
+
+  &:hover {
+    color: ${primaryHighlight}
+  }
+
+  @media (min-width: 1028px) {
+    width: 20%;
+  }
+`;
+
+export const FooterCreditContainer = styled.div`
+  margin-top: ${containerGap};
+
+  h6 {
+    color: white;
+    ${textCentering}
+  }
+`;
+
 
 export const SomethingElse = {};

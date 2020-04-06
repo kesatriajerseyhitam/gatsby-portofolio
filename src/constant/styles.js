@@ -19,4 +19,5 @@ export const color = {
 
 export const padding = {
   mobileHorizontalPadding: '15vw',
+  webHorizontalPadding: '25vw',
 };

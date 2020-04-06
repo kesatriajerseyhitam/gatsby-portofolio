@@ -6,7 +6,7 @@ import {
   useStaticQuery,
 } from 'gatsby';
 
-import links from '../../constant/links';
+import { links } from '../../constant/links';
 import {
   HeaderContainer,
   LinkContainer,
