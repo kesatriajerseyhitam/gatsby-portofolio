@@ -57,6 +57,11 @@ export const InlineLinkContainer = styled.ul`
     display: flex;
     justify-content: space-between;
   }
+
+  @media(min-width: 1360px) {
+    width: 35vw;
+  }
+
 `;
 
 export const LinkContainer = styled.ul`
