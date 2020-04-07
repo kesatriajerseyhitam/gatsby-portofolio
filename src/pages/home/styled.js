@@ -16,7 +16,6 @@ export const IntroductionContainer = styled.div`
 
   @media(min-width: 1024px) {
     flex-direction: row-reverse;
-    align-items: center;
   }
 `;
 
@@ -61,6 +60,9 @@ export const Paragraph = styled.p`
 export const Button = styled.button`
   ${defaultButton}
   width: 80%;
-`;
 
-export const other = {};
+  @media(min-width: 1650px) {
+    margin-top: 80px;
+    width: 100%;
+  }
+`;

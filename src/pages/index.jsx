@@ -25,7 +25,7 @@ const IndexPage = () => (
         <h4
           style={{
             color: primaryHighlight,
-            marginBottom: '15px',
+            marginBottom: '20px',
           }}
         >
           Brief Introduction
