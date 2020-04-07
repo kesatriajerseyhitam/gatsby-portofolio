@@ -43,6 +43,10 @@ export const BriefContainer = styled.div`
     text-align: left;
     width: 55%;
   }
+
+  @media(min-width: 1650px) {
+    padding: 50px 50px;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -61,8 +65,12 @@ export const Button = styled.button`
   ${defaultButton}
   width: 80%;
 
+  @media(min-width: 1024px) {
+    width: 100%;
+  }
+
   @media(min-width: 1650px) {
-    margin-top: 80px;
+    margin-top: 50px;
     width: 100%;
   }
 `;
