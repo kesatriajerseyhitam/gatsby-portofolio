@@ -4,7 +4,6 @@ import { color, padding } from '../../constant/styles';
 const {
   primaryHighlight,
   secondaryBackground,
-  secondaryHighlight,
 } = color;
 const {
   mobileHorizontalPadding,
@@ -25,7 +24,7 @@ export const FooterContainer = styled.div`
   padding: 20px ${mobileHorizontalPadding};
   margin-top: auto;
 
-  @media (min-width: 1028px) {
+  @media (min-width: 1024px) {
     padding: 20px ${webHorizontalPadding};
   }
 `;
@@ -64,7 +63,7 @@ export const LinkContainer = styled.a`
     color: ${primaryHighlight}
   }
 
-  @media (min-width: 1028px) {
+  @media (min-width: 1024px) {
     width: 20%;
   }
 `;

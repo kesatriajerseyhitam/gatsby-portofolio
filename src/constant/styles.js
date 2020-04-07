@@ -19,5 +19,15 @@ export const color = {
 
 export const padding = {
   mobileHorizontalPadding: '15vw',
+  mobileHeaderHorizontalPadding: '8vw',
   webHorizontalPadding: '25vw',
 };
+
+export const defaultButton = `
+  background: ${color.gradient};
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+`;

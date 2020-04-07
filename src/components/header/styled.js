@@ -1,12 +1,16 @@
 import styled from 'styled-components';
 import { FaBars } from 'react-icons/fa';
-import { color } from '../../constant/styles';
+import { color, padding } from '../../constant/styles';
 
 const {
   primaryHighlight,
   secondaryBackground,
   secondaryHighlight,
 } = color;
+const {
+  mobileHeaderHorizontalPadding: hMobilePadding,
+  mobileHorizontalPadding: hPadding,
+} = padding;
 
 const headerWeight = '87px';
 
@@ -30,8 +34,12 @@ export const HeaderContainer = styled.div`
   display: flex;
   height: ${headerWeight};
   justify-content: space-between;
-  padding: 0 8vw;
+  padding: 0 ${hMobilePadding};
   position: relative;
+
+  @media(min-width: 1024px) {
+    padding: 0 ${hPadding};
+  }
 `;
 
 export const InlineLinkContainer = styled.ul`
