@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../constant/styles';
+import { color, defaultButton } from '../../constant/styles';
 
 const {
   secondaryBackground,
@@ -11,6 +11,10 @@ export const WebCardContainer = styled.div`
   margin-top: 70px;
 
   @media(min-width: 1024px) {
+    width: 49%;
+  }
+
+  @media(min-width: 1280px) {
     width: 32%;
   }
 `;
@@ -19,6 +23,7 @@ export const ImageContainer = styled.img`
   border-radius: ${borderRadius};
   box-shadow: 0px 1px 10px 1px black;
   margin-bottom: 0;
+  max-height: 165px;
   width: 100%;
 `;
 
@@ -36,15 +41,19 @@ export const ProjectInfoContainer = styled.div`
     transform: translate(0, -20px);
     transition: all 1s ease-out;
   }
-
-  @media(min-width: 1024px) {
-    min-height: 390px;
-  }
 `;
 
 export const Paragraph = styled.p`
   margin-bottom: 30px;
   text-align: justify;
   text-align-last: left;
+  width: 100%;
+`;
+
+
+export const DetailButton = styled.button`
+  ${defaultButton};
+  box-shadow: 0px 1px 10px 1px black;
+  margin-top: 40px;
   width: 100%;
 `;

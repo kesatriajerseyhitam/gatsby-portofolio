@@ -6,6 +6,7 @@ import {
   Paragraph,
   ProjectInfoContainer,
   WebCardContainer,
+  DetailButton,
 } from './styled';
 
 import TechLabel from '../tech-label';
@@ -16,25 +17,25 @@ const WebCard = ({
   const techs = technology.split(',');
 
   return (
-    <WebCardContainer
-      data-sal="slide-up"
-      data-sal-easing="ease-out"
-    >
-      <ImageContainer src={image} alt="project" />
+    <WebCardContainer>
+      <ImageContainer src={image[0]} alt="project" />
       <ProjectInfoContainer>
         <div>
           <h3 style={{ width: '100%' }}>
             { title }
           </h3>
           <Paragraph>
-            { description }
+            { description.length > 120 ? `${description.slice(0, 120)}...` : description }
           </Paragraph>
-          <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-            {
-              techs.map((tech) => <TechLabel key={tech} technology={tech} />)
-            }
+          <div style={{ minHeight: '90px', maxHeight: '90px', overflow: 'hidden' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+              { techs.map((tech) => <TechLabel key={tech} technology={tech} />) }
+            </div>
           </div>
         </div>
+        <DetailButton>
+          See Detail
+        </DetailButton>
       </ProjectInfoContainer>
     </WebCardContainer>
   );

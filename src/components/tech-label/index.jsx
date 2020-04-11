@@ -13,29 +13,28 @@ const LabelContainer = styled.div`
 `;
 
 const color = {
+  context: '#0090ff',
+  express: '#84ce24',
+  firebase: '#FFCB2B',
+  flutter: '#52c4f8',
+  graphql: '#e632ac',
+  node: '#84ce24',
   react: '#0090ff',
   redux: '#0090ff',
-  context: '#0090ff',
-  graphql: '#e632ac',
   saga: '#89d96d',
-  node: '#84ce24',
-  flutter: '#52c4f8',
-  firebase: '#FFCB2B',
+  sequelize: '#00B1EA',
+  study: '#000000',
 };
 
-const TechLabel = ({ technology }) => {
-  console.log(technology);
-
-  return (
-    <LabelContainer
-      style={{
-        backgroundColor: color[technology.toLowerCase()],
-      }}
-    >
-      {technology}
-    </LabelContainer>
-  );
-};
+const TechLabel = ({ technology }) => (
+  <LabelContainer
+    style={{
+      backgroundColor: color[technology.toLowerCase().trim()],
+    }}
+  >
+    {technology}
+  </LabelContainer>
+);
 
 TechLabel.propTypes = {
   technology: PropTypes.string.isRequired,

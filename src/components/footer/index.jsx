@@ -27,7 +27,7 @@ const Footer = () => (
       }
     </FooterLinksContainer>
     <FooterCreditContainer>
-      <h6>
+      <h4>
         2020 &copy; Developed by
         {' '}
         <b>Raka Pratama</b>
@@ -35,7 +35,7 @@ const Footer = () => (
         using
         {' '}
         <b>Gatsby.js</b>
-      </h6>
+      </h4>
     </FooterCreditContainer>
   </FooterContainer>
 );

@@ -71,9 +71,14 @@ export const LinkContainer = styled.a`
 export const FooterCreditContainer = styled.div`
   margin-top: ${containerGap};
 
-  h6 {
+  h4 {
     color: white;
+    padding: 20px 0;
     ${textCentering}
+
+    @media(min-width: 1024px) {
+      font-size: 20px;
+    }
   }
 `;
 
