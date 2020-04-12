@@ -13,7 +13,7 @@ import {
 import TechLabel from '../tech-label';
 
 const WebCard = ({
-  title, description, image, technology,
+  title, description, image, technology, slug,
 }) => {
   const techs = technology.split(',');
 
@@ -34,7 +34,11 @@ const WebCard = ({
             </div>
           </div>
         </div>
-        <DetailButton fade to="/">
+        <DetailButton
+          fade
+          to="/portofolio/detail/"
+          state={{ slug }}
+        >
           See Detail
         </DetailButton>
       </ProjectInfoContainer>
@@ -46,6 +50,7 @@ WebCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   image: PropTypes.arrayOf(String).isRequired,
+  slug: PropTypes.string.isRequired,
   technology: PropTypes.string.isRequired,
 };
 

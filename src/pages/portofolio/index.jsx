@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+/* eslint-disable react/forbid-prop-types */
+import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import {
   CategoryButton,
   CategoryButtonContainer,
   PageTitle,
-  ProjectContainer
+  ProjectContainer,
 } from './styled';
 
 import BackEndSection from '../../components/_portofolio/back-end';
@@ -14,9 +16,11 @@ import SEO from '../../components/seo';
 
 import { getProjectCategories } from '../../constant/projects';
 
-const Portofolio = () => {
+const Portofolio = ({ location }) => {
   const [selectedCategory, setSelectedCategory] = useState('front-end');
   const categories = getProjectCategories();
+
+  const { state: { category } } = location;
 
   const getCategoryItem = () => {
     switch (selectedCategory) {
@@ -28,6 +32,13 @@ const Portofolio = () => {
         return <FrontEndSection />;
     }
   };
+
+  useEffect(() => {
+    if (category) {
+      setSelectedCategory(category.split(' ')[0].toLowerCase());
+    }
+  }, []);
+
 
   return (
     <Layout>
@@ -55,6 +66,10 @@ const Portofolio = () => {
       </ProjectContainer>
     </Layout>
   );
+};
+
+Portofolio.propTypes = {
+  location: PropTypes.object.isRequired,
 };
 
 export default Portofolio;

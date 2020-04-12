@@ -24,16 +24,14 @@ const IconContainer = styled.i`
   width: 100%;
 `;
 
-const IndexPage = () => {
-
-  return (
-    <Layout>
-      <SEO title="Home" />
-      <Introduction />
-      <IconContainer>
-        <FaArrowCircleDown className="moveDown" />
-      </IconContainer>
-      {
+const IndexPage = () => (
+  <Layout>
+    <SEO title="Home" />
+    <Introduction />
+    <IconContainer>
+      <FaArrowCircleDown className="moveDown" />
+    </IconContainer>
+    {
         projects.map(({ data, title }) => (
           <Projects
             data={data}
@@ -42,8 +40,7 @@ const IndexPage = () => {
           />
         ))
       }
-    </Layout>
-  );
-};
+  </Layout>
+);
 
 export default IndexPage;

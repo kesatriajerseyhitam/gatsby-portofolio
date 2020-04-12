@@ -20,7 +20,11 @@ const Projects = ({ data, title }) => {
       <TitleContainer>
         { title }
       </TitleContainer>
-      <UpperButtonContainer fade to="/portofolio">
+      <UpperButtonContainer
+        fade
+        to="/portofolio"
+        state={{ category: title }}
+      >
         See More
       </UpperButtonContainer>
       <ProjectContainer>
@@ -35,6 +39,7 @@ const Projects = ({ data, title }) => {
                     description={description}
                     image={image}
                     key={slug}
+                    slug={slug}
                     technology={technology}
                     title={projectTitle}
                   />
@@ -43,7 +48,11 @@ const Projects = ({ data, title }) => {
             )
             : null
         }
-        <BottomButtonContainer fade to="/portofolio">
+        <BottomButtonContainer
+          fade
+          to="/portofolio"
+          state={{ category: title }}
+        >
           See More
         </BottomButtonContainer>
       </ProjectContainer>
@@ -52,7 +61,7 @@ const Projects = ({ data, title }) => {
 };
 
 Projects.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.array.isRequired,
   title: PropTypes.string.isRequired,
 };
 

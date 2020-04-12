@@ -3,11 +3,11 @@
 import React from 'react';
 
 import WebCard from '../../web-card';
-import { getSpecificProjects } from '../../../constant/projects';
+import { getProjectsByCategory } from '../../../constant/projects';
 
 
 const FrontEndSection = () => {
-  const projects = getSpecificProjects('front-end');
+  const projects = getProjectsByCategory('front-end');
 
   return (
     <>
@@ -19,6 +19,7 @@ const FrontEndSection = () => {
             description={description}
             image={image}
             key={slug}
+            slug={slug}
             technology={technology}
             title={title}
           />

@@ -13,7 +13,7 @@ export const projects = [
           'A fashion e-commerce project. Built using react technologies. '
           + 'This project is a study case project to learn react. I deep dive into react concept from basic theory to complex conxept.',
         responsibilities: [
-          'Build all features within the app including (slicing, create function(s), and integrating with payment gatewat)',
+          'Build all features within the app including (slicing, create function(s), and integrating with payment gateway)',
         ],
         technology: 'react, redux, context, graphQL, saga, study',
         type: 'web',
@@ -39,6 +39,7 @@ export const projects = [
         type: 'web',
         slug: 'crownmwece-fe',
         featured: true,
+        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
       },
       {
         title: 'Cartalog',
@@ -213,6 +214,7 @@ export const projects = [
         type: 'web',
         slug: 'crownmwece-be',
         featured: true,
+        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
       },
       {
         title: 'Cartalog',
@@ -265,8 +267,33 @@ export const projects = [
   },
 ];
 
+export const getAllProjects = () => {
+  const allProjects = [];
+
+  projects.forEach((project) => {
+    project.data.forEach((item) => allProjects.push(item));
+  });
+
+  return allProjects;
+};
+
+export const getAllSlug = () => {
+  const allProjects = getAllProjects();
+
+  const slugs = allProjects.map((project) => project.slug);
+  return slugs;
+};
+
 export const getProjectCategories = () => projects.map((item) => item.title);
-export const getSpecificProjects = (keywords) => {
+
+export const getProjectsByCategory = (keywords) => {
   const specificProjects = projects.filter((item) => item.title.toLowerCase().includes(keywords));
   return specificProjects[0].data;
+};
+
+export const getSingleProjectBySlug = (slug) => {
+  const allProjects = getAllProjects();
+
+  const singleProject = allProjects.filter((project) => project.slug === slug);
+  return singleProject[0];
 };

@@ -14,6 +14,8 @@ import {
   StyledIcon,
 } from './styled';
 
+import { color } from '../../constant/styles';
+
 const getLogo = graphql`
   query {
     logo: file(relativePath:{eq: "logo.png"}) {
@@ -26,6 +28,7 @@ const getLogo = graphql`
   }
 `;
 
+const { secondaryHighlight } = color;
 
 const Header = () => {
   const [toogled, setToogled] = useState(false);
@@ -38,7 +41,12 @@ const Header = () => {
           <LinkContainer>
             {
             links.map((link) => (
-              <AniLink key={link.name} fade to={link.path}>
+              <AniLink
+                activeStyle={{ color: secondaryHighlight }}
+                key={link.name}
+                fade
+                to={link.path}
+              >
                 <li>{link.name}</li>
               </AniLink>
             ))
@@ -54,7 +62,12 @@ const Header = () => {
         <InlineLinkContainer>
           {
             links.map((link) => (
-              <AniLink key={link.name} fade to={link.path}>
+              <AniLink
+                activeStyle={{ color: secondaryHighlight }}
+                key={link.name}
+                fade
+                to={link.path}
+              >
                 <li>{link.name}</li>
               </AniLink>
             ))
