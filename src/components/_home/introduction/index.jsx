@@ -37,7 +37,7 @@ const Introduction = () => (
         Hi, You can call me Tama, 22 years old. I am
         Software Engineer currently working as Front End
         Engineer. My current tech-stack are Javascript,
-        Dart, and Flutter. I do fullstack web and mobile
+        Dart, and Go. I do fullstack web and mobile
         development.
       </Paragraph>
       <Button>

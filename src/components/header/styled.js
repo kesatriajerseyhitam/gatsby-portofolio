@@ -17,8 +17,10 @@ const headerWeight = '87px';
 const linkStyle = `
   color: ${primaryHighlight};
   display: block;
-  font-family: 'Passion One', cursive;
-  letter-spacing: 5px;
+  font-family: 'Roboto';
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 2px;
   text-transform: capitalize;
 
   &:hover {
@@ -49,7 +51,6 @@ export const InlineLinkContainer = styled.ul`
 
   a {
     ${linkStyle};
-    font-size: 18px;
   }
 
   @media(min-width: 1024px) {
@@ -76,7 +77,6 @@ export const LinkContainer = styled.ul`
 
   a {
     ${linkStyle};
-    font-size: 20px;
     margin: 8px 0;
     text-align: center;
     width: 100%;

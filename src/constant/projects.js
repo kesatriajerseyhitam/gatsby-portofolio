@@ -63,6 +63,124 @@ const projects = [
         featured: true,
         link: 'https://cartalog.id/',
       },
+      {
+        title: 'BCA Rental Assets Management',
+        image: [
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92864088_568464117108189_4650937303638736896_o.jpg?_nc_cat=102&_nc_sid=e007fa&_nc_eui2=AeFIcU2yz6YUYEZR_b5i4Q73vnGED1AFn6--cYQPUAWfr41JPgogGGNRVvdXw7Q4q23RpjTCi0rgSY8vVzPnFrjv&_nc_oc=AQk35c_SzzpMGHOtFTHLF5hmTplKwW656jZg4vRrM3LXRdNIa80H1DC1v1qe1wZRtcI&_nc_ht=scontent.fcgk3-2.fna&oh=48c422f3a701f6381c5bf9da62b6ae2d&oe=5EB850E0',
+          'https://scontent.fcgk7-1.fna.fbcdn.net/v/t1.0-9/93223180_568464017108199_5797857351658635264_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeHRS6wj6fF-1Gs-3PV8akl4PXMkoQxFYs49cyShDEVizuonxDfOZAM3Xg3UsAuKcbBmd7wWeAJW-I5mOhJg6KJ1&_nc_oc=AQn74RECswllyTbicoWyLCGza9Sm9Wzp0sP7DDzKciodrBDe1hXHBo84W5mBl8EuyaM&_nc_ht=scontent.fcgk7-1.fna&oh=fe72f0d60bbdf77893304a940e7e2761&oe=5EB95784',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92579836_568464030441531_6190160270065664_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEC6hOVcmkdPR6xeVsYKiJG4vKSXLGdoEzi8pJcsZ2gTIqSmb_sjF_fo51xwGjCkd0JVR6e8AmeoWYzpCOnC75k&_nc_oc=AQl2UwYXgl2aPNKxLSh0v9AIobAhcq2y-7-7wBi6Suv5ypD-5i8Uj1qrb0eC6UkbngQ&_nc_ht=scontent.fcgk3-2.fna&oh=4724e6f3d3afb7307ed6684956e22f72&oe=5EB79251',
+        ],
+        description:
+          'BCA’s assets rental management platform. '
+          + 'Built using Vue using Vuex, with help of Tailwind CSS Framework',
+        responsibilities: [
+          'Slice design into the prototype on assets and admin pages',
+          'Fetching data from database and serve the data within the data table on assets and admin pages',
+          'Optimize pagination, search, and sorting function on assets and admin pages',
+          'Add data feature on assets and admin pages',
+          'Edit data feature on assets and admin pages',
+          'Delete data feature on assets and admin pages',
+          'Fix some existing bugs',
+          'Do feedback request',
+          'Handle new developer involved in project',
+        ],
+        technology: 'vue, vuex, tailwind',
+        type: 'web',
+        slug: 'ram-fe',
+        featured: false,
+      },
+      {
+        title: 'BCA Vehicle Order Application',
+        image: [
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92864088_568464117108189_4650937303638736896_o.jpg?_nc_cat=102&_nc_sid=e007fa&_nc_eui2=AeFIcU2yz6YUYEZR_b5i4Q73vnGED1AFn6--cYQPUAWfr41JPgogGGNRVvdXw7Q4q23RpjTCi0rgSY8vVzPnFrjv&_nc_oc=AQk35c_SzzpMGHOtFTHLF5hmTplKwW656jZg4vRrM3LXRdNIa80H1DC1v1qe1wZRtcI&_nc_ht=scontent.fcgk3-2.fna&oh=48c422f3a701f6381c5bf9da62b6ae2d&oe=5EB850E0',
+          'https://scontent.fcgk7-1.fna.fbcdn.net/v/t1.0-9/93223180_568464017108199_5797857351658635264_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeHRS6wj6fF-1Gs-3PV8akl4PXMkoQxFYs49cyShDEVizuonxDfOZAM3Xg3UsAuKcbBmd7wWeAJW-I5mOhJg6KJ1&_nc_oc=AQn74RECswllyTbicoWyLCGza9Sm9Wzp0sP7DDzKciodrBDe1hXHBo84W5mBl8EuyaM&_nc_ht=scontent.fcgk7-1.fna&oh=fe72f0d60bbdf77893304a940e7e2761&oe=5EB95784',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92579836_568464030441531_6190160270065664_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEC6hOVcmkdPR6xeVsYKiJG4vKSXLGdoEzi8pJcsZ2gTIqSmb_sjF_fo51xwGjCkd0JVR6e8AmeoWYzpCOnC75k&_nc_oc=AQl2UwYXgl2aPNKxLSh0v9AIobAhcq2y-7-7wBi6Suv5ypD-5i8Uj1qrb0eC6UkbngQ&_nc_ht=scontent.fcgk3-2.fna&oh=4724e6f3d3afb7307ed6684956e22f72&oe=5EB79251',
+        ],
+        description:
+          'BCA’s vehicle order application platform. '
+          + 'Built using Vue using Vuex, with help of Tailwind CSS Framework',
+        responsibilities: [
+          'Slice design into the prototype for cabang page, order page, and point page',
+          'Fetching data from database and serve the data within the data table for cabang page, order page, and point page',
+          'Optimize pagination, search, and sorting function for cabang page, order page, and point page',
+          'Add data feature for cabang page, order page, and point page',
+          'Edit data feature for cabang page, order page, and point page',
+          'Delete data feature for cabang page, order page, and point page',
+          'Fix some existing bugs',
+          'Do feedback request',
+          'Handle new developer involved in project',
+        ],
+        technology: 'vue, vuex, tailwind',
+        type: 'web',
+        slug: 'ram-fe',
+        featured: false,
+      },
+      {
+        title: 'Pembiayaan-Qu',
+        image: [
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92864088_568464117108189_4650937303638736896_o.jpg?_nc_cat=102&_nc_sid=e007fa&_nc_eui2=AeFIcU2yz6YUYEZR_b5i4Q73vnGED1AFn6--cYQPUAWfr41JPgogGGNRVvdXw7Q4q23RpjTCi0rgSY8vVzPnFrjv&_nc_oc=AQk35c_SzzpMGHOtFTHLF5hmTplKwW656jZg4vRrM3LXRdNIa80H1DC1v1qe1wZRtcI&_nc_ht=scontent.fcgk3-2.fna&oh=48c422f3a701f6381c5bf9da62b6ae2d&oe=5EB850E0',
+          'https://scontent.fcgk7-1.fna.fbcdn.net/v/t1.0-9/93223180_568464017108199_5797857351658635264_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeHRS6wj6fF-1Gs-3PV8akl4PXMkoQxFYs49cyShDEVizuonxDfOZAM3Xg3UsAuKcbBmd7wWeAJW-I5mOhJg6KJ1&_nc_oc=AQn74RECswllyTbicoWyLCGza9Sm9Wzp0sP7DDzKciodrBDe1hXHBo84W5mBl8EuyaM&_nc_ht=scontent.fcgk7-1.fna&oh=fe72f0d60bbdf77893304a940e7e2761&oe=5EB95784',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92579836_568464030441531_6190160270065664_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEC6hOVcmkdPR6xeVsYKiJG4vKSXLGdoEzi8pJcsZ2gTIqSmb_sjF_fo51xwGjCkd0JVR6e8AmeoWYzpCOnC75k&_nc_oc=AQl2UwYXgl2aPNKxLSh0v9AIobAhcq2y-7-7wBi6Suv5ypD-5i8Uj1qrb0eC6UkbngQ&_nc_ht=scontent.fcgk3-2.fna&oh=4724e6f3d3afb7307ed6684956e22f72&oe=5EB79251',
+        ],
+        description:
+          'Pembiayaan-Qu admin page web platform. '
+          + 'Built using Angular, and Tachyons CSS',
+        responsibilities: [
+          'Get involved analyzing business process',
+          'Create app design for almost all pages',
+          'Slice the design into angular prototype for almost all pages',
+          'Handle data modifying process for almost all pages',
+
+        ],
+        technology: 'angular, tachyons, firebase',
+        type: 'web',
+        slug: 'pembiayaanqu-fe',
+        featured: false,
+      },
+      {
+        title: 'Umroh-Qu',
+        image: [
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92864088_568464117108189_4650937303638736896_o.jpg?_nc_cat=102&_nc_sid=e007fa&_nc_eui2=AeFIcU2yz6YUYEZR_b5i4Q73vnGED1AFn6--cYQPUAWfr41JPgogGGNRVvdXw7Q4q23RpjTCi0rgSY8vVzPnFrjv&_nc_oc=AQk35c_SzzpMGHOtFTHLF5hmTplKwW656jZg4vRrM3LXRdNIa80H1DC1v1qe1wZRtcI&_nc_ht=scontent.fcgk3-2.fna&oh=48c422f3a701f6381c5bf9da62b6ae2d&oe=5EB850E0',
+          'https://scontent.fcgk7-1.fna.fbcdn.net/v/t1.0-9/93223180_568464017108199_5797857351658635264_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeHRS6wj6fF-1Gs-3PV8akl4PXMkoQxFYs49cyShDEVizuonxDfOZAM3Xg3UsAuKcbBmd7wWeAJW-I5mOhJg6KJ1&_nc_oc=AQn74RECswllyTbicoWyLCGza9Sm9Wzp0sP7DDzKciodrBDe1hXHBo84W5mBl8EuyaM&_nc_ht=scontent.fcgk7-1.fna&oh=fe72f0d60bbdf77893304a940e7e2761&oe=5EB95784',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92579836_568464030441531_6190160270065664_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEC6hOVcmkdPR6xeVsYKiJG4vKSXLGdoEzi8pJcsZ2gTIqSmb_sjF_fo51xwGjCkd0JVR6e8AmeoWYzpCOnC75k&_nc_oc=AQl2UwYXgl2aPNKxLSh0v9AIobAhcq2y-7-7wBi6Suv5ypD-5i8Uj1qrb0eC6UkbngQ&_nc_ht=scontent.fcgk3-2.fna&oh=4724e6f3d3afb7307ed6684956e22f72&oe=5EB79251',
+        ],
+        description:
+          'Umroh-Qu admin page web platform. '
+          + 'Built using Angular, and Tachyons CSS',
+        responsibilities: [
+          'Create app design for almost all pages',
+          'Slice the design into angular prototype for almost all pages',
+          'Handle data modifying process for almost all pages',
+        ],
+        technology: 'angular, tachyons, firebase',
+        type: 'web',
+        slug: 'umrohqu-fe',
+        featured: false,
+      },
+      {
+        title: 'TC App Sinarmas Biotech',
+        image: [
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92864088_568464117108189_4650937303638736896_o.jpg?_nc_cat=102&_nc_sid=e007fa&_nc_eui2=AeFIcU2yz6YUYEZR_b5i4Q73vnGED1AFn6--cYQPUAWfr41JPgogGGNRVvdXw7Q4q23RpjTCi0rgSY8vVzPnFrjv&_nc_oc=AQk35c_SzzpMGHOtFTHLF5hmTplKwW656jZg4vRrM3LXRdNIa80H1DC1v1qe1wZRtcI&_nc_ht=scontent.fcgk3-2.fna&oh=48c422f3a701f6381c5bf9da62b6ae2d&oe=5EB850E0',
+          'https://scontent.fcgk7-1.fna.fbcdn.net/v/t1.0-9/93223180_568464017108199_5797857351658635264_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeHRS6wj6fF-1Gs-3PV8akl4PXMkoQxFYs49cyShDEVizuonxDfOZAM3Xg3UsAuKcbBmd7wWeAJW-I5mOhJg6KJ1&_nc_oc=AQn74RECswllyTbicoWyLCGza9Sm9Wzp0sP7DDzKciodrBDe1hXHBo84W5mBl8EuyaM&_nc_ht=scontent.fcgk7-1.fna&oh=fe72f0d60bbdf77893304a940e7e2761&oe=5EB95784',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92579836_568464030441531_6190160270065664_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEC6hOVcmkdPR6xeVsYKiJG4vKSXLGdoEzi8pJcsZ2gTIqSmb_sjF_fo51xwGjCkd0JVR6e8AmeoWYzpCOnC75k&_nc_oc=AQl2UwYXgl2aPNKxLSh0v9AIobAhcq2y-7-7wBi6Suv5ypD-5i8Uj1qrb0eC6UkbngQ&_nc_ht=scontent.fcgk3-2.fna&oh=4724e6f3d3afb7307ed6684956e22f72&oe=5EB79251',
+        ],
+        description:
+          'Sinarmas agriculture business plant tracker app. '
+          + 'Built using Angular, and Tachyons CSS',
+        responsibilities: [
+          'Slice design into the prototype for first until forth stage page',
+          'Fetching data from database and serve the data within the data table for first until forth stage page',
+          'Create pagination, search, and sorting function for first until forth stage page',
+          'Add data feature for first until forth stage page',
+          'Edit data feature for first until forth stage page',
+          'Delete data feature for first until forth stage page',
+          'Maintain application (fix bugs and do feedback)',
+        ],
+        technology: 'angular, tachyons, firebase',
+        type: 'web',
+        slug: 'biotech-fe',
+        featured: false,
+      },
     ],
   },
   {
@@ -84,7 +202,7 @@ const projects = [
         technology: 'node, express',
         type: 'web',
         slug: 'crownmwece-be',
-        featured: true,
+        featured: false,
       },
       {
         title: 'Genflix',
@@ -117,7 +235,7 @@ const projects = [
         ],
         description:
           'E-commerce platform, blogs, forum related to car stuff. '
-          + 'Built using React with Redux state management',
+          + 'Built using Node with Express JS, and Sequelize ORM',
         responsibilities: [
           'Cars bidding feature',
           'Cars management feature',
@@ -134,6 +252,27 @@ const projects = [
         slug: 'cartalog-be',
         featured: true,
         link: 'https://cartalog.id/',
+      },
+      {
+        title: 'Sinarmas Replanting',
+        image: [
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92864088_568464117108189_4650937303638736896_o.jpg?_nc_cat=102&_nc_sid=e007fa&_nc_eui2=AeFIcU2yz6YUYEZR_b5i4Q73vnGED1AFn6--cYQPUAWfr41JPgogGGNRVvdXw7Q4q23RpjTCi0rgSY8vVzPnFrjv&_nc_oc=AQk35c_SzzpMGHOtFTHLF5hmTplKwW656jZg4vRrM3LXRdNIa80H1DC1v1qe1wZRtcI&_nc_ht=scontent.fcgk3-2.fna&oh=48c422f3a701f6381c5bf9da62b6ae2d&oe=5EB850E0',
+          'https://scontent.fcgk7-1.fna.fbcdn.net/v/t1.0-9/93223180_568464017108199_5797857351658635264_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeHRS6wj6fF-1Gs-3PV8akl4PXMkoQxFYs49cyShDEVizuonxDfOZAM3Xg3UsAuKcbBmd7wWeAJW-I5mOhJg6KJ1&_nc_oc=AQn74RECswllyTbicoWyLCGza9Sm9Wzp0sP7DDzKciodrBDe1hXHBo84W5mBl8EuyaM&_nc_ht=scontent.fcgk7-1.fna&oh=fe72f0d60bbdf77893304a940e7e2761&oe=5EB95784',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92579836_568464030441531_6190160270065664_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEC6hOVcmkdPR6xeVsYKiJG4vKSXLGdoEzi8pJcsZ2gTIqSmb_sjF_fo51xwGjCkd0JVR6e8AmeoWYzpCOnC75k&_nc_oc=AQl2UwYXgl2aPNKxLSh0v9AIobAhcq2y-7-7wBi6Suv5ypD-5i8Uj1qrb0eC6UkbngQ&_nc_ht=scontent.fcgk3-2.fna&oh=4724e6f3d3afb7307ed6684956e22f72&oe=5EB79251',
+        ],
+        description:
+          'Sinarmas human management within palm oil agriculture business. '
+          + 'Built using Node with Express JS, and Sequelize ORM',
+        responsibilities: [
+          'Dashboard functionality',
+          'Map functionality',
+          'Flexible data input functionality',
+          'Employee and land',
+        ],
+        technology: 'node, express, sequelize',
+        type: 'web',
+        slug: 'replanting-be',
+        featured: true,
       },
     ],
   },

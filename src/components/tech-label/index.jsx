@@ -13,6 +13,8 @@ const LabelContainer = styled.div`
 `;
 
 const color = {
+  angukar: '#B52E33',
+  tachyons: '#FED008',
   context: '#0090ff',
   express: '#84ce24',
   firebase: '#FFCB2B',
@@ -24,6 +26,9 @@ const color = {
   saga: '#89d96d',
   sequelize: '#00B1EA',
   study: '#000000',
+  vue: '#3FB984',
+  vuex: '#3FB984',
+  tailwind: '#18B8B9',
 };
 
 const TechLabel = ({ technology }) => (
