@@ -24,10 +24,6 @@ export const links = [
     name: 'portofolio',
     path: '/portofolio',
   },
-  {
-    name: 'contact',
-    path: '/contact',
-  },
 ];
 
 export const footerLinks = [
