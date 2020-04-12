@@ -60,7 +60,6 @@ export const Paragraph = styled.p`
 
 export const DetailButton = styled(AniLink)`
   ${defaultButton};
-  box-shadow: 0px 1px 10px 1px black;
   margin-top: 40px;
   width: 100%;
 `;

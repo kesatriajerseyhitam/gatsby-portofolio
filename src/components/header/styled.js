@@ -47,7 +47,7 @@ export const HeaderContainer = styled.div`
 export const InlineLinkContainer = styled.ul`
   display: none;
   width: 35vw;
-  margin-top: 30px;
+  margin-top: 35px;
 
   a {
     ${linkStyle};
@@ -60,7 +60,7 @@ export const InlineLinkContainer = styled.ul`
   }
 
   @media(min-width: 1360px) {
-    width: 25vw;
+    width: 30vw;
   }
 
 `;
