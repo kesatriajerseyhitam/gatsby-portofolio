@@ -6,7 +6,8 @@ import Introduction from '../components/_home/introduction';
 import Layout from '../components/layout';
 import Projects from '../components/_home/projects';
 import SEO from '../components/seo';
-import projects from '../constant/projects';
+
+import { projects } from '../constant/projects';
 
 const moveDown = keyframes`
   from { transform: translateY(0); }

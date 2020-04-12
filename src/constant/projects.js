@@ -1,4 +1,4 @@
-const projects = [
+export const projects = [
   {
     title: 'Front-End Development',
     data: [
@@ -278,4 +278,4 @@ const projects = [
   },
 ];
 
-export default projects;
+export const getProjectCategories = () => projects.map((item) => item.title);
