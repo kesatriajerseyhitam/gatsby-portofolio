@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.punyatama.co.id">
-    <img alt="Gatsby" src="./src/images/logo.png" width="200" />
+    <img alt="Gatsby" src="./src/images/logo.png" width="400" />
   </a>
 </p>
 <h1 align="center">
