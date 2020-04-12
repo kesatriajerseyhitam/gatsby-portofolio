@@ -30,6 +30,7 @@ export const defaultButton = `
   color: white;
   cursor: pointer;
   padding: 10px 20px;
+  text-align: center;
 
   &:focus {
     outline: none;

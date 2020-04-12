@@ -13,7 +13,7 @@ const LabelContainer = styled.div`
 `;
 
 const color = {
-  angukar: '#B52E33',
+  angular: '#B52E33',
   tachyons: '#FED008',
   context: '#0090ff',
   express: '#84ce24',

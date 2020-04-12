@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import noImage from '../../images/no-image.jpg';
 
 import {
   ImageContainer,
@@ -18,10 +19,10 @@ const WebCard = ({
 
   return (
     <WebCardContainer>
-      <ImageContainer src={image[0]} alt="project" />
+      <ImageContainer src={image.length > 0 ? image[0] : noImage} alt="project" />
       <ProjectInfoContainer>
         <div>
-          <h3 style={{ width: '100%' }}>
+          <h3 style={{ width: '100%', minHeight: '50px' }}>
             { title }
           </h3>
           <Paragraph>
@@ -33,7 +34,7 @@ const WebCard = ({
             </div>
           </div>
         </div>
-        <DetailButton>
+        <DetailButton fade to="/">
           See Detail
         </DetailButton>
       </ProjectInfoContainer>
@@ -44,7 +45,7 @@ const WebCard = ({
 WebCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.arrayOf(String).isRequired,
   technology: PropTypes.string.isRequired,
 };
 

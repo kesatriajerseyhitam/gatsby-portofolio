@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 import { color, defaultButton } from '../../../constant/styles';
 
 const {
@@ -33,7 +35,7 @@ export const TitleContainer = styled.h3`
   }
 `;
 
-export const UpperButtonContainer = styled.button`
+export const UpperButtonContainer = styled(AniLink)`
   ${defaultButton};
   width: 20%;
   display: none;
@@ -56,7 +58,7 @@ export const ProjectContainer = styled.div`
   }
 `;
 
-export const BottomButtonContainer = styled.button`
+export const BottomButtonContainer = styled(AniLink)`
   ${defaultButton};
   margin-top: 40px;
   width: 100%;

@@ -1,5 +1,8 @@
 import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 import { color, defaultButton } from '../../constant/styles';
+
 
 const {
   secondaryBackground,
@@ -10,7 +13,7 @@ export const WebCardContainer = styled.div`
   width: 100%;
   margin-top: 70px;
 
-  @media(min-width: 1024px) {
+  @media(min-width: 768px) {
     width: 49%;
   }
 
@@ -47,11 +50,12 @@ export const Paragraph = styled.p`
   margin-bottom: 30px;
   text-align: justify;
   text-align-last: left;
+  min-height: 100px;
   width: 100%;
 `;
 
 
-export const DetailButton = styled.button`
+export const DetailButton = styled(AniLink)`
   ${defaultButton};
   box-shadow: 0px 1px 10px 1px black;
   margin-top: 40px;

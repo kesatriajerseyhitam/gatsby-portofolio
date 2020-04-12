@@ -28,7 +28,6 @@ export const CategoryButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
 
   @media(min-width: 1024px) {
     justify-content: start;
@@ -38,6 +37,7 @@ export const CategoryButtonContainer = styled.div`
 export const CategoryButton = styled.button`
   ${(props) => (props.selected ? defaultButton : unselectedButton)};
   margin: 10px 0;
+  width: 100%;
 
   &:first-child{
     margin-top: 0px;
@@ -49,6 +49,7 @@ export const CategoryButton = styled.button`
 
   @media(min-width: 1024px) {
     margin: 0 10px;
+    width: auto;
 
     &:first-child{
       margin-left: 0px;
@@ -60,4 +61,13 @@ export const CategoryButton = styled.button`
   }
 `;
 
-export const anything = {};
+export const ProjectContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  @media(min-width: 1024px) {
+    padding: 0 0 50px 0;
+  }
+`;

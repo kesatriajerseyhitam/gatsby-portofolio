@@ -4,16 +4,30 @@ import {
   CategoryButton,
   CategoryButtonContainer,
   PageTitle,
+  ProjectContainer
 } from './styled';
 
+import BackEndSection from '../../components/_portofolio/back-end';
+import FrontEndSection from '../../components/_portofolio/front-end';
 import Layout from '../../components/layout/index';
 import SEO from '../../components/seo';
 
 import { getProjectCategories } from '../../constant/projects';
 
 const Portofolio = () => {
-  const [selectedCategory, setSelectedCategory] = useState('front');
+  const [selectedCategory, setSelectedCategory] = useState('front-end');
   const categories = getProjectCategories();
+
+  const getCategoryItem = () => {
+    switch (selectedCategory) {
+      case 'front-end':
+        return <FrontEndSection />;
+      case 'back-end':
+        return <BackEndSection />;
+      default:
+        return <FrontEndSection />;
+    }
+  };
 
   return (
     <Layout>
@@ -25,6 +39,7 @@ const Portofolio = () => {
         {
           categories.map((item) => (
             <CategoryButton
+              key={item}
               onClick={() => {
                 setSelectedCategory(item.split(' ')[0].toLowerCase());
               }}
@@ -35,6 +50,9 @@ const Portofolio = () => {
           ))
         }
       </CategoryButtonContainer>
+      <ProjectContainer>
+        { getCategoryItem() }
+      </ProjectContainer>
     </Layout>
   );
 };

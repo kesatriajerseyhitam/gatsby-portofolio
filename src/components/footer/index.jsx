@@ -20,7 +20,7 @@ const Footer = () => (
     <FooterLinksContainer>
       {
         links.map((item) => (
-          <LinkContainer href={item.path} target="_blank">
+          <LinkContainer key={item.path} href={item.path} target="_blank">
             { item.icon }
           </LinkContainer>
         ))

@@ -38,8 +38,8 @@ const Header = () => {
           <LinkContainer>
             {
             links.map((link) => (
-              <AniLink fade to={link.path}>
-                <li key={link.name}>{link.name}</li>
+              <AniLink key={link.name} fade to={link.path}>
+                <li>{link.name}</li>
               </AniLink>
             ))
           }
@@ -54,8 +54,8 @@ const Header = () => {
         <InlineLinkContainer>
           {
             links.map((link) => (
-              <AniLink fade to={link.path}>
-                <li key={link.name}>{link.name}</li>
+              <AniLink key={link.name} fade to={link.path}>
+                <li>{link.name}</li>
               </AniLink>
             ))
           }

@@ -20,7 +20,7 @@ const Projects = ({ data, title }) => {
       <TitleContainer>
         { title }
       </TitleContainer>
-      <UpperButtonContainer>
+      <UpperButtonContainer fade to="/portofolio">
         See More
       </UpperButtonContainer>
       <ProjectContainer>
@@ -28,21 +28,22 @@ const Projects = ({ data, title }) => {
           data
             ? (
               featuredData.map(({
-                title: projectTitle, description, image, technology, type,
+                title: projectTitle, description, image, technology, type, slug,
               }) => (type === 'web'
                 ? (
                   <WebCard
-                    title={projectTitle}
                     description={description}
                     image={image}
+                    key={slug}
                     technology={technology}
+                    title={projectTitle}
                   />
                 )
                 : null))
             )
             : null
         }
-        <BottomButtonContainer>
+        <BottomButtonContainer fade to="/portofolio">
           See More
         </BottomButtonContainer>
       </ProjectContainer>
