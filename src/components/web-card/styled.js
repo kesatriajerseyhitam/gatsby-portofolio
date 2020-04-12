@@ -49,7 +49,6 @@ export const ProjectInfoContainer = styled.div`
 export const Paragraph = styled.p`
   margin-bottom: 30px;
   text-align: justify;
-  text-align-last: left;
   min-height: 100px;
   width: 100%;
 `;
