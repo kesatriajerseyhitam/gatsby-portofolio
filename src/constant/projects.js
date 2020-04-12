@@ -19,6 +19,7 @@ export const projects = [
         type: 'web',
         slug: 'crownmerce-fe',
         featured: true,
+        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
       },
       {
         title: 'Genflix',
@@ -39,7 +40,7 @@ export const projects = [
         type: 'web',
         slug: 'crownmwece-fe',
         featured: true,
-        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
+        link: 'https://genflix.co.id/',
       },
       {
         title: 'Cartalog',
@@ -192,6 +193,7 @@ export const projects = [
         type: 'web',
         slug: 'crownmerce-be',
         featured: false,
+        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
       },
       {
         title: 'Genflix',
@@ -212,9 +214,9 @@ export const projects = [
         ],
         technology: 'node, express, sequelize',
         type: 'web',
-        slug: 'crownmwece-be',
+        slug: 'genflix-be',
         featured: true,
-        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
+        link: 'https://genflix.co.id/',
       },
       {
         title: 'Cartalog',
