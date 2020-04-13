@@ -3,7 +3,6 @@ import { color } from '../../constant/styles';
 
 const {
   primaryHighlight,
-  secondaryHighlight,
 } = color;
 
 export const Container = styled.div`
@@ -58,25 +57,24 @@ export const LinksListContainer = styled.div`
   width: 70%;
 
   @media(min-width: 1024px) {
-    width: 50%;
+    width: 40%;
   }
 `;
 
 export const LinkContainer = styled.a`
   border: 1px white solid;
-  border-radius: 50%;
   color: white;
   cursor: pointer;
-  padding: 10px 12px;
+  padding: 8px 10px;
   font-size: 1rem;
   text-align: center;
 
   &:hover {
-    border: 1px ${secondaryHighlight} solid;
-    color: ${secondaryHighlight}
+    border: 1px ${primaryHighlight} solid;
+    color: ${primaryHighlight}
   }
 
   @media(min-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 `;
