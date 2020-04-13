@@ -5,6 +5,20 @@ const {
   primaryHighlight,
 } = color;
 
+const defaultJobStyle = `
+  font-size: .5rem;
+  font-weight: 100;
+  letter-spacing: .3rem;
+  margin-top: 5px;
+  margin-bottom: .2rem;
+  text-align: center;
+  width: 100%;
+
+  @media(min-width: 1024px) {
+    font-size: 1.5rem;
+  }
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -35,18 +49,19 @@ export const TitleContainer = styled.h1`
 `;
 
 export const JobContainer = styled.h6`
-  font-size: .5rem;
-  font-weight: 100;
-  letter-spacing: .3rem;
-  margin-top: 5px;
-  margin-bottom: .2rem;
-  text-align: center;
-  width: 100%;
+  ${defaultJobStyle};
+`;
+
+export const ContactContainer = styled.h6`
+  ${defaultJobStyle};
+  font-size: .2rem;
+  letter-spacing: .1rem;
 
   @media(min-width: 1024px) {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     margin-bottom: 1.5rem;
-  }
+}
 `;
 
 export const LinksListContainer = styled.div`
