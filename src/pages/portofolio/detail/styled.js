@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { defaultButton } from '../../../constant/styles';
 
 const textStyle = `
   font-family: 'Roboto';
@@ -51,4 +52,8 @@ export const ResponsibilitiesContainer = styled.div`
       list-style-type: square;
     }
   }
+`;
+
+export const ButtonContainer = styled.a`
+  ${defaultButton}
 `;

@@ -26,8 +26,12 @@ export const ImageContainer = styled.img`
   border-radius: ${borderRadius};
   box-shadow: 0px 1px 10px 1px black;
   margin-bottom: 0;
-  max-height: 165px;
+  min-height: 190px;
   width: 100%;
+
+  @media(min-width: 1550px) {
+    min-height: 220px;
+  }
 `;
 
 export const ProjectInfoContainer = styled.div`
@@ -49,7 +53,6 @@ export const ProjectInfoContainer = styled.div`
 export const Paragraph = styled.p`
   margin-bottom: 30px;
   text-align: justify;
-  text-align-last: left;
   min-height: 100px;
   width: 100%;
 `;
@@ -57,7 +60,6 @@ export const Paragraph = styled.p`
 
 export const DetailButton = styled(AniLink)`
   ${defaultButton};
-  box-shadow: 0px 1px 10px 1px black;
   margin-top: 40px;
   width: 100%;
 `;

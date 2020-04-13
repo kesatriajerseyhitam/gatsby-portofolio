@@ -4,7 +4,6 @@ import {
   FooterContainer,
   FooterCreditContainer,
   FooterLinksContainer,
-  FooterTitleContainer,
   LinkContainer,
 } from './styled';
 
@@ -12,11 +11,6 @@ import { footerLinks as links } from '../../constant/links';
 
 const Footer = () => (
   <FooterContainer>
-    <FooterTitleContainer>
-      <h2>
-        { 'keep in touch'.toUpperCase() }
-      </h2>
-    </FooterTitleContainer>
     <FooterLinksContainer>
       {
         links.map((item) => (

@@ -70,6 +70,7 @@ export const LinkContainer = styled.a`
 
 export const FooterCreditContainer = styled.div`
   margin-top: ${containerGap};
+  border-top: 1px solid white;
 
   h4 {
     color: white;
@@ -77,7 +78,8 @@ export const FooterCreditContainer = styled.div`
     ${textCentering}
 
     @media(min-width: 1024px) {
-      font-size: 20px;
+      font-size: 17px;
+      font-weight: 500;
     }
   }
 `;

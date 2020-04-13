@@ -13,20 +13,16 @@ export const links = [
     path: '/',
   },
   {
+    name: 'portofolio',
+    path: '/portofolio',
+  },
+  {
     name: 'about',
     path: '/about',
   },
   {
     name: 'blog',
     path: '/blog',
-  },
-  {
-    name: 'portofolio',
-    path: '/portofolio',
-  },
-  {
-    name: 'contact',
-    path: '/contact',
   },
 ];
 

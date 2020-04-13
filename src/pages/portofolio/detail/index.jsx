@@ -5,6 +5,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { FaArrowCircleLeft } from 'react-icons/fa';
 
 import {
+  ButtonContainer,
   DescrtiptionContainer,
   DetailContainer,
   ImageContainer,
@@ -19,11 +20,22 @@ import Layout from '../../../components/layout/index';
 import SEO from '../../../components/seo';
 import TechLabel from '../../../components/tech-label';
 
+import WebImage from '../../../components/_portofolio/web-image';
 import { getSingleProjectBySlug } from '../../../constant/projects';
+
 
 const PortofolioDetail = ({ location }) => {
   const { state: { slug } } = location;
   const project = getSingleProjectBySlug(slug);
+
+  const renderImage = (type, images) => {
+    switch (type) {
+      case 'web':
+        return <WebImage images={images} />;
+      default:
+        return <h3>Tidak ada data</h3>;
+    }
+  };
 
   return (
     <Layout>
@@ -36,7 +48,7 @@ const PortofolioDetail = ({ location }) => {
           color: 'white',
           display: 'flex',
           fontSize: '25px',
-          marginBottom: '80px',
+          marginBottom: '50px',
           width: '100%',
         }}
       >
@@ -47,8 +59,13 @@ const PortofolioDetail = ({ location }) => {
         {project.title}
       </PageTitle>
       <ProjectDetailContainer>
-        <ImageContainer>Hallo mate</ImageContainer>
+        <ImageContainer>
+          {
+            renderImage(project.type, project.image)
+          }
+        </ImageContainer>
         <DetailContainer>
+          <h3>Project Description: </h3>
           <DescrtiptionContainer>
             {project.description}
           </DescrtiptionContainer>
@@ -66,6 +83,17 @@ const PortofolioDetail = ({ location }) => {
               project.technology.split(',').map((tech) => <TechLabel key={tech} technology={tech} />)
             }
           </div>
+          {
+            project.link
+              ? (
+                <div style={{ display: 'flex', width: '100%', margin: '40px auto' }}>
+                  <ButtonContainer href={project.link} target="_blank">
+                    Visit website
+                  </ButtonContainer>
+                </div>
+              )
+              : null
+          }
         </DetailContainer>
       </ProjectDetailContainer>
     </Layout>
