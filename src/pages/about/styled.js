@@ -30,13 +30,18 @@ export const ImageContainer = styled.img`
   padding: 0 13vw;
   width: 100vw;
   margin-bottom: 0;
+
+  @media(min-width: 1024px) {
+    margin-top: -20px;
+    width: 50vw;
+  }
 `;
 
 export const TitleContainer = styled.h1`
   color: ${primaryHighlight};
-  margin-top: -15px;
+  margin-top: -5px;
   font-family: 'Roboto';
-  font-size: 5vw;
+  font-size: 4vw;
   font-weight: 500;
   margin-bottom: 0;
   letter-spacing: 2px;
@@ -44,7 +49,7 @@ export const TitleContainer = styled.h1`
   width: 100%;
 
   @media(min-width: 1024px) {
-    margin-top: -40px;
+    margin-top: -10px;
   }
 `;
 
@@ -61,7 +66,18 @@ export const ContactContainer = styled.h6`
     font-size: 1.1rem;
     letter-spacing: 1px;
     margin-bottom: 1.5rem;
-}
+  }
+`;
+
+export const IconContainer = styled.span`
+  display: inline-block;
+  font-size: .3rem;
+  margin: 0 .4rem;
+
+  @media(min-width: 1024px) {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+  }
 `;
 
 export const LinksListContainer = styled.div`
@@ -80,8 +96,8 @@ export const LinkContainer = styled.a`
   border: 1px white solid;
   color: white;
   cursor: pointer;
-  padding: 8px 10px;
-  font-size: 1rem;
+  padding: 2px 6px;
+  font-size: .7rem;
   text-align: center;
 
   &:hover {
@@ -91,5 +107,6 @@ export const LinkContainer = styled.a`
 
   @media(min-width: 1024px) {
     font-size: 1.3rem;
+    padding: 8px 10px;
   }
 `;

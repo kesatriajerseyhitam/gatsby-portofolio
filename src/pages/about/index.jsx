@@ -14,6 +14,7 @@ import { footerLinks as links } from '../../constant/links';
 import {
   Container,
   ContactContainer,
+  IconContainer,
   ImageContainer,
   JobContainer,
   LinksListContainer,
@@ -36,11 +37,17 @@ const IndexPage = () => (
         Software Engineer
       </JobContainer>
       <ContactContainer>
-        <FaMapMarker style={{ margin: '0 .8rem' }} />
-        Bandung, ID |
-        <FaEnvelope style={{ margin: '0 .8rem' }} />
-        mgf.prauliyatama@gmail.com |
-        <FaPhone style={{ margin: '0 .8rem' }} />
+        <IconContainer>
+          <FaMapMarker />
+        </IconContainer>
+        Bandung, ID
+        <IconContainer>
+          <FaEnvelope />
+        </IconContainer>
+        mgf.prauliyatama@gmail.com
+        <IconContainer>
+          <FaPhone />
+        </IconContainer>
         +628-595-137-2394
       </ContactContainer>
       <LinksListContainer>
