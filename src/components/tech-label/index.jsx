@@ -21,6 +21,13 @@ const color = {
   flutter: '#52c4f8',
   graphql: '#e632ac',
   node: '#84ce24',
+  javascript: '#F4DD2B',
+  dart: '#055A9D',
+  go: '#00ADD8',
+  gatsby: '#663399',
+  postgresql: '#2F6792',
+  mysql: '#F0F0F0',
+  mongo: '#599736',
   react: '#0090ff',
   redux: '#0090ff',
   saga: '#89d96d',
@@ -34,7 +41,7 @@ const color = {
 const TechLabel = ({ technology }) => (
   <LabelContainer
     style={{
-      backgroundColor: color[technology.toLowerCase().trim()],
+      backgroundColor: color[technology.toLowerCase().trim()] ? color[technology.toLowerCase().trim()] : 'black',
     }}
   >
     {technology}
