@@ -9,7 +9,7 @@ const {
 } = color;
 const {
   mobileHeaderHorizontalPadding: hMobilePadding,
-  mobileHorizontalPadding: hPadding,
+  webHorizontalPadding: hPadding,
 } = padding;
 
 const headerWeight = '87px';

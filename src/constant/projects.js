@@ -66,7 +66,7 @@ export const projects = [
         link: 'https://cartalog.id/',
       },
       {
-        title: 'BCA Rental Assets Management',
+        title: 'BCA RAM',
         image: [],
         description:
           'BCA’s assets rental management platform. '
@@ -88,7 +88,7 @@ export const projects = [
         featured: false,
       },
       {
-        title: 'BCA Vehicle Order Application',
+        title: 'BCA VOA',
         image: [
           'https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/92952830_568855487069052_2345128555379163136_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeFnaGPlBn9o7tCX3eNxl6dk5XumkZeY0nHle6aRl5jScWeCRwkm8SSKfWjMsU7Isd5HyUByxi3q2k_Pn0vs1YPw&_nc_oc=AQkdP23hbQ1rnFN4zggV_d8WE9QLQ0UtKq1AWoEEhvueMGHR_jCnqf6Cjwou5hYXHoU&_nc_ht=scontent.fbdo4-1.fna&oh=92f7af3d62322e97941a4d2611ea429c&oe=5EB93259',
         ],

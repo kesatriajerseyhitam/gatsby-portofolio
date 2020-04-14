@@ -22,8 +22,9 @@ export const ProjectsContainer = styled.div`
 export const TitleContainer = styled.h3`
   color: ${primaryHighlight};
   font-family: 'Roboto';
-  margin-bottom: -40px;
-  letter-spacing: 3px;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 0;
   text-align: center;
   width: 100%;
 
@@ -31,7 +32,6 @@ export const TitleContainer = styled.h3`
     text-align: left;
     width: 50%;
     padding: 0;
-    margin: auto 0;
   }
 `;
 
@@ -50,11 +50,11 @@ export const ProjectContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 30px 0;
+  margin-top: 20px;
   width: 100%;
 
   @media(min-width: 1024px) {
-    padding: 0 0 50px 0;
+    margin-top: 40px;
   }
 `;
 

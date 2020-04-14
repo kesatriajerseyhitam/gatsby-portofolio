@@ -11,7 +11,7 @@ const borderRadius = '10px';
 
 export const WebCardContainer = styled.div`
   width: 100%;
-  margin-top: 70px;
+  margin-bottom: 30px;
 
   @media(min-width: 768px) {
     width: 49%;
@@ -41,7 +41,7 @@ export const ProjectInfoContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   font-family: 'Roboto';
-  padding: 40px 50px;
+  padding: 30px 40px;
   width: 100%;
 
   &:hover {
@@ -51,9 +51,9 @@ export const ProjectInfoContainer = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  margin-bottom: 30px;
+  margin-bottom: 5px;
+  min-height: 90px;
   text-align: justify;
-  min-height: 100px;
   width: 100%;
 `;
 

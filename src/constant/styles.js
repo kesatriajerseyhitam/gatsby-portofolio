@@ -18,9 +18,9 @@ export const color = {
 };
 
 export const padding = {
-  mobileHorizontalPadding: '15vw',
+  mobileHorizontalPadding: '10vw',
   mobileHeaderHorizontalPadding: '8vw',
-  webHorizontalPadding: '25vw',
+  webHorizontalPadding: '13vw',
 };
 
 export const defaultButton = `

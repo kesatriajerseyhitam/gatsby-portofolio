@@ -48,7 +48,7 @@ const PortofolioDetail = ({ location }) => {
           color: 'white',
           display: 'flex',
           fontSize: '25px',
-          marginBottom: '50px',
+          marginBottom: '30px',
           width: '100%',
         }}
       >
@@ -86,7 +86,7 @@ const PortofolioDetail = ({ location }) => {
           {
             project.link
               ? (
-                <div style={{ display: 'flex', width: '100%', margin: '40px auto' }}>
+                <div style={{ display: 'flex', width: '100%', margin: '20px auto' }}>
                   <ButtonContainer href={project.link} target="_blank">
                     Visit website
                   </ButtonContainer>
