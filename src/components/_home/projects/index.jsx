@@ -17,16 +17,25 @@ const Projects = ({ data, title }) => {
 
   return (
     <ProjectsContainer>
-      <TitleContainer>
-        { title }
-      </TitleContainer>
-      <UpperButtonContainer
-        fade
-        to="/portofolio"
-        state={{ category: title }}
+      <div
+        style={{
+          alignItems: 'center',
+          display: 'flex',
+          justifyContent: 'space-between',
+          width: '100%',
+        }}
       >
-        See More
-      </UpperButtonContainer>
+        <TitleContainer>
+          { title }
+        </TitleContainer>
+        <UpperButtonContainer
+          fade
+          to="/portofolio"
+          state={{ category: title }}
+        >
+          See More
+        </UpperButtonContainer>
+      </div>
       <ProjectContainer>
         {
           data

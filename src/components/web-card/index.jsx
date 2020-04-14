@@ -22,13 +22,17 @@ const WebCard = ({
       <ImageContainer src={image.length > 0 ? image[0] : noImage} alt="project" />
       <ProjectInfoContainer>
         <div>
-          <h3 style={{ width: '100%', minHeight: '50px' }}>
+          <h3 style={{
+            width: '100%',
+            marginBottom: '20px',
+          }}
+          >
             { title }
           </h3>
           <Paragraph>
             { description.length > 120 ? `${description.slice(0, 120)}...` : description }
           </Paragraph>
-          <div style={{ minHeight: '90px', maxHeight: '90px', overflow: 'hidden' }}>
+          <div style={{ minHeight: '85px', maxHeight: '85px', overflow: 'hidden' }}>
             <div style={{ display: 'flex', flexWrap: 'wrap' }}>
               { techs.map((tech) => <TechLabel key={tech} technology={tech} />) }
             </div>

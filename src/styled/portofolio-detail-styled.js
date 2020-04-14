@@ -5,9 +5,9 @@ const textStyle = `
   font-family: 'Roboto';
   font-size: 15px;
   font-weight: 500;
-  width: 100%;
   text-align-last: left;
   text-align: justify;
+  width: 100%;
 `;
 
 export const ProjectDetailContainer = styled.div`
@@ -41,7 +41,7 @@ export const DetailContainer = styled.div`
 
 export const DescrtiptionContainer = styled.h5`
   ${textStyle};
-  line-height: 2;
+  line-height: 1.5;
 `;
 
 export const ResponsibilitiesContainer = styled.div`

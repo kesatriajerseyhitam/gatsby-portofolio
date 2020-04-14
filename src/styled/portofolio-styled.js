@@ -14,8 +14,8 @@ export const PageTitle = styled.h1`
   color: ${primaryHighlight};
   font-family: 'Roboto';
   font-size: 50px;
-  letter-spacing: 3px;
-  margin: 20px 0 40px 0;
+  letter-spacing: 2px;
+  margin: 20px 0 30px 0;
   text-align: center;
 
   @media(min-width: 1024px) {
@@ -28,6 +28,7 @@ export const CategoryButtonContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 30px;
 
   @media(min-width: 1024px) {
     justify-content: start;

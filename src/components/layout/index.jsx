@@ -10,6 +10,7 @@ import background from '../../images/background.png';
 
 const {
   mobileHorizontalPadding: hPadding,
+  webHorizontalPadding: webHPadding,
 } = padding;
 
 const LayoutContainer = styled.div`
@@ -28,6 +29,10 @@ const MainContainer = styled.main`
   font-family: 'Roboto';
   min-height: 100vh;
   padding: 8vh ${hPadding};
+
+  @media(min-width: 1024px) {
+    padding: 8vh ${webHPadding};
+  }
 `;
 
 const Layout = ({ children }) => (
