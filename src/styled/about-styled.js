@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color } from '../../constant/styles';
+import { color } from '../constant/styles';
 
 const {
   primaryHighlight,

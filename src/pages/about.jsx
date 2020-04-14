@@ -5,13 +5,13 @@ import {
   FaPhone,
 } from 'react-icons/fa';
 
-import TechLabel from '../../components/tech-label';
-import Layout from '../../components/layout';
-import ProfileImage from '../../images/profile.png';
-import SEO from '../../components/seo';
-import logo from '../../images/tama-icon.png';
+import TechLabel from '../components/tech-label';
+import Layout from '../components/layout';
+import ProfileImage from '../images/profile.png';
+import SEO from '../components/seo';
+import logo from '../images/tama-icon.png';
 
-import { footerLinks as links } from '../../constant/links';
+import { footerLinks as links } from '../constant/links';
 
 import {
   AboutContainer,
@@ -27,12 +27,12 @@ import {
   LinksListContainer,
   LinkContainer,
   TitleContainer,
-} from './styled';
+} from '../styled/about-styled';
 
 const techs = 'Javascript, Dart, Go, React, Gatsby, Next, Flutter, Vue, Angular,'
   + 'Node, Express, PostgreSQL, MySQL, Mongo, GraphQL';
 
-const IndexPage = () => (
+const About = () => (
   <Layout>
     <SEO title="About" />
     <Container>
@@ -102,4 +102,4 @@ const IndexPage = () => (
 );
 
 
-export default IndexPage;
+export default About;

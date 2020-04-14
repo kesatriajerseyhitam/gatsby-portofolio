@@ -11,17 +11,17 @@ import {
   ImageContainer,
   ProjectDetailContainer,
   ResponsibilitiesContainer,
-} from './styled';
+} from '../../styled/portofolio-detail-styled';
 import {
   PageTitle,
-} from '../styled';
+} from '../../styled/portofolio-styled';
 
-import Layout from '../../../components/layout/index';
-import SEO from '../../../components/seo';
-import TechLabel from '../../../components/tech-label';
+import Layout from '../../components/layout/index';
+import SEO from '../../components/seo';
+import TechLabel from '../../components/tech-label';
 
-import WebImage from '../../../components/_portofolio/web-image';
-import { getSingleProjectBySlug } from '../../../constant/projects';
+import WebImage from '../../components/_portofolio/web-image';
+import { getSingleProjectBySlug } from '../../constant/projects';
 
 
 const PortofolioDetail = ({ location }) => {

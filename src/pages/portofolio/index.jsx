@@ -7,7 +7,7 @@ import {
   CategoryButtonContainer,
   PageTitle,
   ProjectContainer,
-} from './styled';
+} from '../../styled/portofolio-styled';
 
 import BackEndSection from '../../components/_portofolio/back-end';
 import FrontEndSection from '../../components/_portofolio/front-end';

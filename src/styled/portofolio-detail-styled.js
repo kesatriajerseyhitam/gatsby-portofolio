@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { defaultButton } from '../../../constant/styles';
+import { defaultButton } from '../constant/styles';
 
 const textStyle = `
   font-family: 'Roboto';

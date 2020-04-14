@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Layout from '../../components/layout';
-import SEO from '../../components/seo';
-import { color } from '../../constant/styles';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { color } from '../constant/styles';
 
 const {
   primaryHighlight,

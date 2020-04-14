@@ -24,7 +24,7 @@ const IconContainer = styled.i`
   width: 100%;
 `;
 
-const IndexPage = () => (
+const Home = () => (
   <Layout>
     <SEO title="Home" />
     <Introduction />
@@ -43,4 +43,4 @@ const IndexPage = () => (
   </Layout>
 );
 
-export default IndexPage;
+export default Home;
