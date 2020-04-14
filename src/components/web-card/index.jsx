@@ -36,7 +36,7 @@ const WebCard = ({
         </div>
         <DetailButton
           fade
-          to="/portofolio/detail/"
+          to="/portofolio/detail"
           state={{ slug }}
         >
           See Detail

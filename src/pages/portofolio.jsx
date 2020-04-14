@@ -7,20 +7,20 @@ import {
   CategoryButtonContainer,
   PageTitle,
   ProjectContainer,
-} from '../../styled/portofolio-styled';
+} from '../styled/portofolio-styled';
 
-import BackEndSection from '../../components/_portofolio/back-end';
-import FrontEndSection from '../../components/_portofolio/front-end';
-import Layout from '../../components/layout/index';
-import SEO from '../../components/seo';
+import BackEndSection from '../components/_portofolio/back-end';
+import FrontEndSection from '../components/_portofolio/front-end';
+import Layout from '../components/layout/index';
+import SEO from '../components/seo';
 
-import { getProjectCategories } from '../../constant/projects';
+import { getProjectCategories } from '../constant/projects';
 
 const Portofolio = ({ location }) => {
   const [selectedCategory, setSelectedCategory] = useState('front-end');
   const categories = getProjectCategories();
 
-  const { state: { category } } = location;
+  const category = location.state ? location.state.category : undefined;
 
   const getCategoryItem = () => {
     switch (selectedCategory) {
