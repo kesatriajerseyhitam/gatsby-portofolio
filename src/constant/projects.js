@@ -294,8 +294,10 @@ export const getProjectsByCategory = (keywords) => {
 };
 
 export const getSingleProjectBySlug = (slug) => {
+  const param = slug || 'cartalog-fe';
+
   const allProjects = getAllProjects();
 
-  const singleProject = allProjects.filter((project) => project.slug === slug);
+  const singleProject = allProjects.filter((project) => project.slug === param);
   return singleProject[0];
 };

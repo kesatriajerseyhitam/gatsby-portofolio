@@ -25,7 +25,7 @@ import { getSingleProjectBySlug } from '../../constant/projects';
 
 
 const PortofolioDetail = ({ location }) => {
-  const { state: { slug } } = location;
+  const slug = location.state ? location.state.slug : undefined;
   const project = getSingleProjectBySlug(slug);
 
   const renderImage = (type, images) => {
