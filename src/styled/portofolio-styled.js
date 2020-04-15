@@ -63,12 +63,16 @@ export const CategoryButton = styled.button`
 `;
 
 export const ProjectContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
   width: 100%;
 
   @media(min-width: 1024px) {
-    padding: 0 0 50px 0;
+    grid-template-columns: 49% 49%;
+  }
+
+  @media(min-width: 1360px) {
+    grid-template-columns: 33% 33% 33%;
   }
 `;
