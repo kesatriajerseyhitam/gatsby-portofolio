@@ -47,14 +47,19 @@ export const UpperButtonContainer = styled(AniLink)`
 `;
 
 export const ProjectContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 20px;
-  width: 100%;
+    display: grid;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
 
-  @media(min-width: 1024px) {
-    margin-top: 40px;
+    @media(min-width: 1024px) {
+      grid-template-columns: 49% 49%;
+      margin-top: 40px;
+    }
+
+    @media(min-width: 1360px) {
+      grid-template-columns: 33% 33% 33%;
+    }margin-top: 40px;
   }
 `;
 

@@ -27,6 +27,6 @@ const FrontEndSection = () => {
       }
     </>
   );
-}
+};
 
 export default FrontEndSection;

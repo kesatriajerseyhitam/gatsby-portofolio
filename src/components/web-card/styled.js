@@ -9,18 +9,7 @@ const {
 } = color;
 const borderRadius = '10px';
 
-export const WebCardContainer = styled.div`
-  width: 100%;
-  margin-bottom: 30px;
-
-  @media(min-width: 768px) {
-    width: 49%;
-  }
-
-  @media(min-width: 1280px) {
-    width: 32%;
-  }
-`;
+export const WebCardContainer = styled.div``;
 
 export const ImageContainer = styled.img`
   border-radius: ${borderRadius};
