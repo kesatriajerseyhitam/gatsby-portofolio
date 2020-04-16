@@ -12,7 +12,7 @@ const {
   webHorizontalPadding: hPadding,
 } = padding;
 
-const headerWeight = '70px';
+const headerWeight = '87px';
 
 const linkStyle = `
   color: ${primaryHighlight};
@@ -34,10 +34,14 @@ export const HeaderContainer = styled.div`
   box-shadow: 0px 1px 10px 1px black;
   color: white;
   display: flex;
-  height: 45px;
+  height: 50px;
   justify-content: space-between;
   padding: 0 ${hMobilePadding};
   position: relative;
+
+  @media(min-width: 768px) {
+    height: 70px;
+  }
 
   @media(min-width: 1024px) {
     height: ${headerWeight};
@@ -46,8 +50,12 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Image = styled.img`
-  width: 30%;
+  width: 25%;
   margin-bottom: 0;
+
+  @media(min-width: 768px) {
+    width: 17%;
+  }
 
   @media(min-width: 1024px) {
     width: 17%;
