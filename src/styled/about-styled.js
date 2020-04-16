@@ -1,9 +1,4 @@
 import styled from 'styled-components';
-import { color } from '../constant/styles';
-
-const {
-  primaryHighlight,
-} = color;
 
 export const AboutContantainer = styled.div`
   display: grid;
@@ -39,7 +34,6 @@ export const DescriptionContainer = styled.div`
   width: 100%;
 
   h2 {
-    /* color: ${primaryHighlight}; */
     font-family: 'Roboto';
     font-size: 28px;
     letter-spacing: 2px;
@@ -52,7 +46,6 @@ export const DescriptionContainer = styled.div`
   }
 
   p {
-    /* color: ${primaryHighlight}; */
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     font-size: 10px;

@@ -52,25 +52,31 @@ export const BriefContainer = styled.div`
 export const Paragraph = styled.p`
   margin-bottom: 40px;
   text-align: justify;
-  text-align-last: center;
-
-  @media(min-width: 1024px) {
-  text-align: left;
-  text-align-last: initial;
-  padding-right: 20px;
-}
+  text-align-last: left;
 `;
 
-export const Button = styled.button`
-  ${defaultButton}
-  width: 80%;
-
-  @media(min-width: 1024px) {
-    width: 100%;
-  }
+export const LinksContainer = styled.div`
+  ${defaultButton};
+  cursor: initial;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
 
   @media(min-width: 1650px) {
     margin-top: 50px;
-    width: 100%;
+  }
+`;
+
+export const LinkContainer = styled.a`
+  color: white;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 5px 0px;
+  text-align: center;
+  width: 33%;
+
+
+  @media (min-width: 1024px) {
+    width: 15%;
   }
 `;
