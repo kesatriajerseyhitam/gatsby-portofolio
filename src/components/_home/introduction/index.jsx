@@ -1,14 +1,16 @@
 import React from 'react';
-
-import { color } from '../../../constant/styles';
-
 import {
   IntroductionContainer,
   Image,
   BriefContainer,
   Paragraph,
-  Button,
+  LinksContainer,
+  LinkContainer,
 } from './styled';
+
+import { color } from '../../../constant/styles';
+import { footerLinks as links } from '../../../constant/links';
+
 
 const {
   primaryHighlight,
@@ -26,23 +28,38 @@ const Introduction = () => (
       >
         Brief Introduction
       </h4>
-      <h3
+      <h2
         style={{
           marginBottom: '20px',
         }}
       >
         I am Software Engineer
-      </h3>
+      </h2>
       <Paragraph>
-        Hi, You can call me Tama, 22 years old. I am
-        Software Engineer currently working as Front End
-        Engineer. My current tech-stack are Javascript,
-        Dart, and Go. I do fullstack web and mobile
-        development.
+        My name is
+        {' '}
+        <i>Raka Pratama,</i>
+        {' '}
+        you can call me
+        {' '}
+        <i>Tama</i>
+        . I am professional Software Engineer. Have 2+ years experiences
+        on developing website both Front-End and Back-End. Most technology
+        I used is using Javascript, with a wide-range of frameworks. But,
+        the one that I frequently used and my personal choice is React for
+        Front-End and Express for Back-End. Beside of Javascript, I also
+        use Dart and Go programming language. Kindly check my social media
+        to know me more!
       </Paragraph>
-      <Button>
-        About Me
-      </Button>
+      <LinksContainer>
+        {
+          links.map((item) => (
+            <LinkContainer key={item.path} href={item.path} target="_blank">
+              { item.icon }
+            </LinkContainer>
+          ))
+        }
+      </LinksContainer>
     </BriefContainer>
   </IntroductionContainer>
 );

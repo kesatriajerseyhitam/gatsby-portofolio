@@ -1,14 +1,11 @@
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
-import Image from 'gatsby-image';
 import React, { useState } from 'react';
-import {
-  graphql,
-  useStaticQuery,
-} from 'gatsby';
 
+import logo from '../../images/logo.png';
 import { links } from '../../constant/links';
 import {
   HeaderContainer,
+  Image,
   LinkContainer,
   InlineLinkContainer,
   StyledIcon,
@@ -16,23 +13,10 @@ import {
 
 import { color } from '../../constant/styles';
 
-const getLogo = graphql`
-  query {
-    logo: file(relativePath:{eq: "logo.png"}) {
-      childImageSharp {
-        fixed(width: 130, height: 50) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;
-
 const { secondaryHighlight } = color;
 
 const Header = () => {
   const [toogled, setToogled] = useState(false);
-  const { logo } = useStaticQuery(getLogo);
 
   return (
     <>
@@ -55,7 +39,10 @@ const Header = () => {
         ) : null
       }
       <HeaderContainer>
-        <Image fixed={logo.childImageSharp.fixed} />
+        <Image
+          src={logo}
+          alt="Logo"
+        />
         <StyledIcon
           onClick={() => setToogled((prevState) => !prevState)}
         />

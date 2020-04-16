@@ -12,7 +12,7 @@ const {
   webHorizontalPadding: hPadding,
 } = padding;
 
-const headerWeight = '87px';
+const headerWeight = '70px';
 
 const linkStyle = `
   color: ${primaryHighlight};
@@ -34,13 +34,27 @@ export const HeaderContainer = styled.div`
   box-shadow: 0px 1px 10px 1px black;
   color: white;
   display: flex;
-  height: ${headerWeight};
+  height: 45px;
   justify-content: space-between;
   padding: 0 ${hMobilePadding};
   position: relative;
 
   @media(min-width: 1024px) {
+    height: ${headerWeight};
     padding: 0 ${hPadding};
+  }
+`;
+
+export const Image = styled.img`
+  width: 30%;
+  margin-bottom: 0;
+
+  @media(min-width: 1024px) {
+    width: 17%;
+  }
+
+  @media(min-width: 1360px) {
+    width: 10%;
   }
 `;
 
@@ -60,7 +74,7 @@ export const InlineLinkContainer = styled.ul`
   }
 
   @media(min-width: 1360px) {
-    width: 30vw;
+    width: 23vw;
   }
 
 `;
@@ -98,8 +112,8 @@ export const LinkContainer = styled.ul`
 export const StyledIcon = styled(FaBars)`
   display: block;
   color: ${primaryHighlight};
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 
   @media(min-width: 1024px) {
     display: none;
