@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { color, defaultButton } from '../../../constant/styles';
 
 const {
+  gradient,
   secondaryBackground,
 } = color;
 
@@ -62,6 +63,10 @@ export const LinksContainer = styled.div`
   justify-content: space-around;
   width: 100%;
 
+  &:active {
+    background: ${gradient};
+  };
+
   @media(min-width: 1650px) {
     margin-top: 50px;
   }
@@ -74,6 +79,10 @@ export const LinkContainer = styled.a`
   margin: 5px 0px;
   text-align: center;
   width: 33%;
+
+  &:active {
+    color: ${secondaryBackground}
+  }
 
 
   @media (min-width: 1024px) {

@@ -35,4 +35,8 @@ export const defaultButton = `
   &:focus {
     outline: none;
   }
+
+  &:active {
+    background: ${color.primaryHighlight};
+  }
 `;

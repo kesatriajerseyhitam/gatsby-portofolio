@@ -11,7 +11,7 @@ export const projects = [
         ],
         description:
           'A fashion e-commerce project. Built using react technologies. '
-          + 'This project is a study case project to learn react. I deep dive into react concept from basic theory to complex conxept.',
+          + 'This project is a study case project to learn react. I deep dive into react concept from basic theory to complex concept.',
         responsibilities: [
           'Build all features within the app including (slicing, create function(s), and integrating with payment gateway)',
         ],
@@ -66,7 +66,7 @@ export const projects = [
         link: 'https://cartalog.id/',
       },
       {
-        title: 'BCA RAM',
+        title: 'BCA Rental Assets Management',
         image: [],
         description:
           'BCA’s assets rental management platform. '
@@ -88,7 +88,7 @@ export const projects = [
         featured: false,
       },
       {
-        title: 'BCA VOA',
+        title: 'BCA Vehicle Order Application',
         image: [
           'https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/92952830_568855487069052_2345128555379163136_o.jpg?_nc_cat=100&_nc_sid=e007fa&_nc_eui2=AeFnaGPlBn9o7tCX3eNxl6dk5XumkZeY0nHle6aRl5jScWeCRwkm8SSKfWjMsU7Isd5HyUByxi3q2k_Pn0vs1YPw&_nc_oc=AQkdP23hbQ1rnFN4zggV_d8WE9QLQ0UtKq1AWoEEhvueMGHR_jCnqf6Cjwou5hYXHoU&_nc_ht=scontent.fbdo4-1.fna&oh=92f7af3d62322e97941a4d2611ea429c&oe=5EB93259',
         ],
@@ -177,25 +177,6 @@ export const projects = [
     title: 'Back-End Development',
     data: [
       {
-        title: 'Crownmerce',
-        image: [
-          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/93379431_568434767111124_6573925545107521536_o.jpg?_nc_cat=107&_nc_sid=e007fa&_nc_eui2=AeGqO4rN-tzOw17uZQzrKJclosW-cheQVUqixb5yF5BVSjNR6ogQc5K3n3bnT1xBcbWKjJoIuFCJIMdgbQo5gl8p&_nc_oc=AQl4sDqMe6udp6ao2g2xCEWo78R_osEiS0fKzfC6jtMDWueswGxPckjIysoDOJQDAqk&_nc_ht=scontent.fcgk3-2.fna&oh=d3159f5eafca549bd869c582053087e5&oe=5EB66E52',
-          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92953549_568434713777796_6136680007310770176_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEZxRot5LLeD9dpGkw3RNi0XHfJuDFkHWBcd8m4MWQdYNOIw1PpRs1nRJzaPI4Vc5Ud3wJoXkL_xGvN69MFmdcF&_nc_oc=AQmfFx_I1jl8RiR1s1h_LayOeqyMdwXfkzKuxB7gzJwXCFUWXAiAaqkNu_4pFk1NqAU&_nc_ht=scontent.fcgk3-2.fna&oh=e9b00998a03e85eebf31baca3b63ebaf&oe=5EB6B4E1',
-          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92273276_568434460444488_2150121342035296256_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeGtql7V76eSSZKjntxxiBTG42KHtEXEiA7jYoe0RcSIDgsUUf6IWvDAObnkA7RvBSdMPoP4HzihK08nl3joxMWp&_nc_oc=AQnkSegyuRJ8qyxFyGdNotr6tH2cQrcSLEUEkZY_3NqjpVzUSITTfYI_noPs4TTMVMk&_nc_ht=scontent.fcgk3-2.fna&oh=23dfe1922873e0740cdd76636614942f&oe=5EB89559',
-        ],
-        description:
-          'A fashion e-commerce project. '
-          + 'This project is a study case project to learn react. I deep dive into react concept from basic theory to complex conxept.',
-        responsibilities: [
-          'Provide API for storing credit card data',
-        ],
-        technology: 'node, express',
-        type: 'web',
-        slug: 'crownmerce-be',
-        featured: false,
-        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
-      },
-      {
         title: 'Genflix',
         image: [
           'https://scontent.fcgk3-1.fna.fbcdn.net/v/t1.0-9/92336691_568456107108990_2185318354212880384_o.jpg?_nc_cat=104&_nc_sid=e007fa&_nc_eui2=AeF0ijl7-rR1g4GkvBsI0HdCgRrfeMzyLPSBGt94zPIs9JPzviDeyq9pEoGZA-Mxd6BWt-Rqe1r8aKx_I2MSAav3&_nc_oc=AQn1Y-GckHmU7vF2V9FetF6PlCAQU0-pMWYtBYnaDCWxhqQ1uvcPVkWb2wKFqNFYG1I&_nc_ht=scontent.fcgk3-1.fna&oh=3bdfd5a62cddd0e5e849d388282ec2e5&oe=5EB6DDDE',
@@ -217,6 +198,26 @@ export const projects = [
         slug: 'genflix-be',
         featured: true,
         link: 'https://genflix.co.id/',
+      },
+      {
+        title: 'Sinarmas Replanting',
+        image: [
+          'https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/93200567_568850620402872_522143477731950592_o.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_eui2=AeFQ4MI0KxK_GmBnHn_pjET0-oe5axg1Znz6h7lrGDVmfGBbwGvjeikAdLEZjTfHCHLkeZ4aIJHNWRHZEl2rX7m1&_nc_oc=AQltJDp7ry-Ym6Hs6eTkStXYzlkrWjQs93rA4rIEtUpr7WrD2nEIPDj3tQZTyECvZZQ&_nc_ht=scontent.fbdo4-1.fna&oh=de6e4b78026248f28fb6d5d39a3a9dea&oe=5EBA1B7A',
+          'https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/93323695_568852020402732_4004857171576619008_o.jpg?_nc_cat=106&_nc_sid=e007fa&_nc_eui2=AeF5tdnoVycfc9aB5n5a5-xdooaKj3jmTjKihoqPeOZOMjds3bg0ZBDaVojN0r5JSBsO5kpZtHIgL_lY2Zh7TDAT&_nc_oc=AQkogpWv_1BNFlx7MYV2gbpq6s8BGIyMXUnEx82KMJEsgjRvEOZKmNGmlFiBfbUp0gQ&_nc_ht=scontent.fbdo4-1.fna&oh=367f6f834b7668f143943573bcd3b5a9&oe=5EB7EE0E',
+        ],
+        description:
+          'Sinarmas human management within palm oil agriculture business. '
+          + 'Built using Node with Express JS, and Sequelize ORM',
+        responsibilities: [
+          'Dashboard functionality',
+          'Map functionality',
+          'Flexible data input functionality',
+          'Employee and land',
+        ],
+        technology: 'node, express, sequelize',
+        type: 'web',
+        slug: 'replanting-be',
+        featured: true,
       },
       {
         title: 'Cartalog',
@@ -246,24 +247,23 @@ export const projects = [
         link: 'https://cartalog.id/',
       },
       {
-        title: 'Sinarmas Replanting',
+        title: 'Crownmerce',
         image: [
-          'https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/93200567_568850620402872_522143477731950592_o.jpg?_nc_cat=108&_nc_sid=e007fa&_nc_eui2=AeFQ4MI0KxK_GmBnHn_pjET0-oe5axg1Znz6h7lrGDVmfGBbwGvjeikAdLEZjTfHCHLkeZ4aIJHNWRHZEl2rX7m1&_nc_oc=AQltJDp7ry-Ym6Hs6eTkStXYzlkrWjQs93rA4rIEtUpr7WrD2nEIPDj3tQZTyECvZZQ&_nc_ht=scontent.fbdo4-1.fna&oh=de6e4b78026248f28fb6d5d39a3a9dea&oe=5EBA1B7A',
-          'https://scontent.fbdo4-1.fna.fbcdn.net/v/t1.0-9/93323695_568852020402732_4004857171576619008_o.jpg?_nc_cat=106&_nc_sid=e007fa&_nc_eui2=AeF5tdnoVycfc9aB5n5a5-xdooaKj3jmTjKihoqPeOZOMjds3bg0ZBDaVojN0r5JSBsO5kpZtHIgL_lY2Zh7TDAT&_nc_oc=AQkogpWv_1BNFlx7MYV2gbpq6s8BGIyMXUnEx82KMJEsgjRvEOZKmNGmlFiBfbUp0gQ&_nc_ht=scontent.fbdo4-1.fna&oh=367f6f834b7668f143943573bcd3b5a9&oe=5EB7EE0E',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/93379431_568434767111124_6573925545107521536_o.jpg?_nc_cat=107&_nc_sid=e007fa&_nc_eui2=AeGqO4rN-tzOw17uZQzrKJclosW-cheQVUqixb5yF5BVSjNR6ogQc5K3n3bnT1xBcbWKjJoIuFCJIMdgbQo5gl8p&_nc_oc=AQl4sDqMe6udp6ao2g2xCEWo78R_osEiS0fKzfC6jtMDWueswGxPckjIysoDOJQDAqk&_nc_ht=scontent.fcgk3-2.fna&oh=d3159f5eafca549bd869c582053087e5&oe=5EB66E52',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92953549_568434713777796_6136680007310770176_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeEZxRot5LLeD9dpGkw3RNi0XHfJuDFkHWBcd8m4MWQdYNOIw1PpRs1nRJzaPI4Vc5Ud3wJoXkL_xGvN69MFmdcF&_nc_oc=AQmfFx_I1jl8RiR1s1h_LayOeqyMdwXfkzKuxB7gzJwXCFUWXAiAaqkNu_4pFk1NqAU&_nc_ht=scontent.fcgk3-2.fna&oh=e9b00998a03e85eebf31baca3b63ebaf&oe=5EB6B4E1',
+          'https://scontent.fcgk3-2.fna.fbcdn.net/v/t1.0-9/92273276_568434460444488_2150121342035296256_o.jpg?_nc_cat=105&_nc_sid=e007fa&_nc_eui2=AeGtql7V76eSSZKjntxxiBTG42KHtEXEiA7jYoe0RcSIDgsUUf6IWvDAObnkA7RvBSdMPoP4HzihK08nl3joxMWp&_nc_oc=AQnkSegyuRJ8qyxFyGdNotr6tH2cQrcSLEUEkZY_3NqjpVzUSITTfYI_noPs4TTMVMk&_nc_ht=scontent.fcgk3-2.fna&oh=23dfe1922873e0740cdd76636614942f&oe=5EB89559',
         ],
         description:
-          'Sinarmas human management within palm oil agriculture business. '
-          + 'Built using Node with Express JS, and Sequelize ORM',
+          'A fashion e-commerce project. '
+          + 'This project is a study case project to learn react. I deep dive into react concept from basic theory to complex concept.',
         responsibilities: [
-          'Dashboard functionality',
-          'Map functionality',
-          'Flexible data input functionality',
-          'Employee and land',
+          'Provide API for storing credit card data',
         ],
-        technology: 'node, express, sequelize',
+        technology: 'node, express',
         type: 'web',
-        slug: 'replanting-be',
-        featured: true,
+        slug: 'crownmerce-be',
+        featured: false,
+        link: 'https://github.com/kesatriajerseyhitam/crownmmerce',
       },
     ],
   },

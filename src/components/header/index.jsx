@@ -40,9 +40,14 @@ const Header = () => {
       }
       <HeaderContainer>
         <Image
-          src={logo}
-          alt="Logo"
-        />
+          fade
+          to="/"
+        >
+          <img
+            src={logo}
+            alt="Logo"
+          />
+        </Image>
         <StyledIcon
           onClick={() => setToogled((prevState) => !prevState)}
         />

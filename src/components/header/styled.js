@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { FaBars } from 'react-icons/fa';
 import { color, padding } from '../../constant/styles';
 
@@ -49,21 +50,28 @@ export const HeaderContainer = styled.div`
   }
 `;
 
-export const Image = styled.img`
-  width: 25%;
-  margin-bottom: 0;
+export const Image = styled(AniLink)`
+  display: flex;
+  align-items: center;
+  width: 20vw;
 
-  @media(min-width: 768px) {
-    width: 17%;
+  img {
+    width: 100%;
+    margin-bottom: 0;
+
+    @media(min-width: 768px) {
+      width: 80%;
+    }
+
+    @media(min-width: 1024px) {
+      width: 60%;
+    }
+
+    @media(min-width: 1360px) {
+      width: 40%;
+    }
   }
 
-  @media(min-width: 1024px) {
-    width: 17%;
-  }
-
-  @media(min-width: 1360px) {
-    width: 10%;
-  }
 `;
 
 export const InlineLinkContainer = styled.ul`
