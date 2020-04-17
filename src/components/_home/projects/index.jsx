@@ -47,6 +47,7 @@ const Projects = ({ data, title }) => {
                   <WebCard
                     description={description}
                     image={image}
+                    isHome
                     key={slug}
                     slug={slug}
                     technology={technology}

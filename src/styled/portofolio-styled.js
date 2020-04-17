@@ -63,16 +63,20 @@ export const CategoryButton = styled.button`
 `;
 
 export const ProjectContainer = styled.div`
-  display: grid;
-  grid-column-gap: 15px;
-  grid-row-gap: 20px;
+  columns: 1;
+  column-gap: 20px;
+  height: 100%;
   width: 100%;
 
+  @media(min-width: 720px) {
+    columns: 2;
+  }
+
   @media(min-width: 1024px) {
-    grid-template-columns: 49% 49%;
+    columns: 3;
   }
 
   @media(min-width: 1360px) {
-    grid-template-columns: 33% 33% 33%;
+    columns: 4;
   }
 `;

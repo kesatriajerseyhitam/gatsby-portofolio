@@ -9,24 +9,30 @@ const {
 } = color;
 const borderRadius = '10px';
 
-export const WebCardContainer = styled.div``;
+export const WebCardContainer = styled.div`
+  ${(props) => (props.isHome ? '' : `
+    break-inside: avoid;
+    margin: 0 0 20px;
+    overflow: hidden;
+  `)}
+`;
 
 export const ImageContainer = styled.img`
   border-radius: ${borderRadius};
   box-shadow: 0px 1px 10px 1px black;
   margin-bottom: 0;
-  min-height: 190px;
+  ${(props) => (props.isHome ? 'min-height: 190px' : '')};
   width: 100%;
 
   @media(min-width: 1550px) {
-    min-height: 220px;
+    ${(props) => (props.isHome ? 'min-height: 220px' : '')};
   }
 `;
 
 export const ProjectInfoContainer = styled.div`
   background-color: ${secondaryBackground};
   border-radius: ${borderRadius};
-  box-shadow: 0px 1px 10px 1px black;
+  ${(props) => (props.isHome ? 'box-shadow: 0px 1px 10px 1px black;' : '')};
   display: flex;
   flex-wrap: wrap;
   font-family: 'Roboto';
@@ -41,7 +47,7 @@ export const ProjectInfoContainer = styled.div`
 
 export const Paragraph = styled.p`
   margin-bottom: 5px;
-  min-height: 90px;
+  ${(props) => (props.isHome ? 'min-height: 90px;' : '')};
   text-align: justify;
   width: 100%;
 `;
