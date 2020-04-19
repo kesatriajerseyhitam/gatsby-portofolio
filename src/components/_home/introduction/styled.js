@@ -64,9 +64,9 @@ export const BriefContainer = styled.div`
     margin-bottom: 20px;
   }
 
-  span {
+  /* span {
     color: ${primaryHighlight};
-  }
+  } */
 
   @media(min-width: 1024px) {
     padding: 30px 50px;
