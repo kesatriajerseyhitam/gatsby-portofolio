@@ -3,15 +3,15 @@ import React from 'react';
 import {
   FooterContainer,
   FooterCreditContainer,
-  FooterLinksContainer,
-  LinkContainer,
+  // FooterLinksContainer,
+  // LinkContainer,
 } from './styled';
 
-import { footerLinks as links } from '../../constant/links';
+// import { footerLinks as links } from '../../constant/links';
 
 const Footer = () => (
   <FooterContainer>
-    <FooterLinksContainer>
+    {/* <FooterLinksContainer>
       {
         links.map((item) => (
           <LinkContainer key={item.path} href={item.path} target="_blank">
@@ -19,7 +19,7 @@ const Footer = () => (
           </LinkContainer>
         ))
       }
-    </FooterLinksContainer>
+    </FooterLinksContainer> */}
     <FooterCreditContainer>
       <h4>
         2020 &copy; Developed by

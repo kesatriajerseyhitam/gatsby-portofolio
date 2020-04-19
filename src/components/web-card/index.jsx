@@ -36,7 +36,7 @@ const WebCard = ({
             { title }
           </h3>
           <Paragraph isHome={isHome || null}>
-            { description }
+            { isHome && description.length > 120 ? `${description.slice(0, 120)}...` : description }
           </Paragraph>
           <div style={
             isHome ? {

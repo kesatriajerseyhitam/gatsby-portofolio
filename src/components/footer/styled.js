@@ -69,8 +69,8 @@ export const LinkContainer = styled.a`
 `;
 
 export const FooterCreditContainer = styled.div`
-  margin-top: ${containerGap};
-  border-top: 1px solid white;
+  /* margin-top: ${containerGap}; */
+  /* border-top: 1px solid white; */
 
   h4 {
     color: white;

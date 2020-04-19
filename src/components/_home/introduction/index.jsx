@@ -8,48 +8,48 @@ import {
   LinkContainer,
 } from './styled';
 
-import { color } from '../../../constant/styles';
 import { footerLinks as links } from '../../../constant/links';
 
 
-const {
-  primaryHighlight,
-} = color;
-
 const Introduction = () => (
   <IntroductionContainer>
-    <Image src="https://i.pinimg.com/564x/f1/10/85/f1108555c7bb610117df203af67246ce.jpg" alt="me" />
+    <Image />
     <BriefContainer>
-      <h4
-        style={{
-          color: primaryHighlight,
-          marginBottom: '20px',
-        }}
-      >
-        Brief Introduction
-      </h4>
-      <h2
-        style={{
-          marginBottom: '20px',
-        }}
-      >
-        I am Software Engineer
+      <h2>
+        Me? has been called Tama for a long time.
       </h2>
+      <h4>
+        Software Engineer... (they said)
+      </h4>
       <Paragraph>
-        My name is
+        Hi, I drink sweet coffe without sugar with 4 block of ice and low fat milk.
+        I build web and mobile application, with TV as a my second monitor. Love to
+        build robust, simple application. Some people titled me as a
         {' '}
-        <i>Raka Pratama,</i>
+        <span>
+          Software
+          Engineer
+        </span>
+        , some people titled me as a
         {' '}
-        you can call me
+        <span>Full-Stack Engineer</span>
+        , some people titled me as
         {' '}
-        <i>Tama</i>
-        . I am professional Software Engineer. Have 2+ years experiences
-        on developing website both Front-End and Back-End. Most technology
-        I used is using Javascript, with a wide-range of frameworks. But,
-        the one that I frequently used and my personal choice is React for
-        Front-End and Express for Back-End. Beside of Javascript, I also
-        use Dart and Go programming language. Kindly check my social media
-        to know me more!
+        <span>Senior Front-End Engineer</span>
+        . But I love to titled my self as Full-Time Paradise Striver
+        <br />
+        <br />
+        In my free time, I do ruin photo composition with photoshop, combine the with
+        other photos. And then I do learn
+        {' '}
+        <span>
+          <i><b>HUMAN</b></i>
+          {' '}
+          language
+        </span>
+        . I do speak my native Bahasa Indonesia, Sundanese, English, Korean, and Arabic.
+        Hey? lets have a conversation with my non-native language. Be my language buddy.
+        Connect with me below!!
       </Paragraph>
       <LinksContainer>
         {
