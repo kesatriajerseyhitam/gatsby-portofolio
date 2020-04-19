@@ -3,6 +3,7 @@ import { color, defaultButton } from '../../../constant/styles';
 
 const {
   gradient,
+  primaryHighlight,
   secondaryBackground,
 } = color;
 
@@ -20,12 +21,23 @@ export const IntroductionContainer = styled.div`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled.div`
+  background-image: url("https://i.pinimg.com/564x/f1/10/85/f1108555c7bb610117df203af67246ce.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-top-left-radius: ${borderRadius};
   border-top-right-radius: ${borderRadius};
+  height: 350px;
+  overflow: hidden;
   width: 100%;
 
+  @media(min-width: 768px) {
+    height: 500px;
+  }
+
   @media(min-width: 1024px) {
+    height: auto;
     border-top-left-radius: 0;
     border-top-right-radius: ${borderRadius};
     margin: 0;
@@ -39,6 +51,23 @@ export const BriefContainer = styled.div`
   text-align: center;
   width: 100%;
 
+  h2 {
+    margin-bottom: 20px;
+
+    @media(min-width: 1024px) {
+      margin-right: 100px;
+    }
+  }
+
+  h4 {
+    color: ${primaryHighlight};
+    margin-bottom: 20px;
+  }
+
+  span {
+    color: ${primaryHighlight};
+  }
+
   @media(min-width: 1024px) {
     padding: 30px 50px;
     text-align: left;
@@ -48,6 +77,8 @@ export const BriefContainer = styled.div`
   @media(min-width: 1650px) {
     padding: 50px 50px;
   }
+
+
 `;
 
 export const Paragraph = styled.p`
@@ -75,7 +106,7 @@ export const LinksContainer = styled.div`
 export const LinkContainer = styled.a`
   color: white;
   cursor: pointer;
-  font-size: 30px;
+  font-size: 20px;
   margin: 5px 0px;
   text-align: center;
   width: 33%;
