@@ -45,7 +45,7 @@ const Portofolio = ({ location }) => {
     <Layout>
       <SEO title="Portofolio" />
       <PageTitle>
-        Hobbies
+        Portofolio
       </PageTitle>
       <CategoryButtonContainer>
         {
