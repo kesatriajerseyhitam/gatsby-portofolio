@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
+
 import { color, padding } from '../../constant/styles';
 
 const {
@@ -43,12 +45,98 @@ export const FooterTitleContainer = styled.div`
 `;
 
 export const FooterLinksContainer = styled.div`
+  color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: ${containerGap};
   padding: 0px 10px;
   width: 100%;
+
+  div {
+    width:  100%;
+  }
+
+  .links-container {
+    text-align: center;
+
+    img {
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    .link-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      .link {
+        display: flex;
+        font-size: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px 0;
+      }
+
+      .icon {
+        display: flex;
+        font-size: 20px;
+        flex-wrap: no-wrap;
+        width: 100%;
+        padding: 10px 0;
+      }
+    }
+  }
+
+  .offer {
+    display: none;
+  }
+
+  @media(min-width: 1024px) {
+    div {
+      width:  50%;
+    }
+
+    .links-container {
+      text-align: left;
+
+      img {
+        margin-bottom: 0;
+        width: 30%;
+      }
+
+      .link-container {
+        .icon {
+          font-size: 30px;
+        }
+      }
+    }
+
+    .offer {
+      display: flex;
+      font-family: 'Roboto';
+      flex-wrap: wrap;
+
+      div {
+        width: 100%;
+        
+        h1 {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+`;
+
+export const FooterLink = styled(AniLink)`
+  color: white;
+  font-family: 'Roboto';
+  padding: 5px 0;
+  width: 100%;
+
+  &:hover {
+    color: ${primaryHighlight};
+  }
 `;
 
 export const LinkContainer = styled.a`
@@ -69,9 +157,6 @@ export const LinkContainer = styled.a`
 `;
 
 export const FooterCreditContainer = styled.div`
-  /* margin-top: ${containerGap}; */
-  /* border-top: 1px solid white; */
-
   h4 {
     color: white;
     padding: 20px 0;
