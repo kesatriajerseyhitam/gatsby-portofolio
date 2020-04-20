@@ -20,9 +20,13 @@ export const links = [
   //   name: 'about',
   //   path: '/about',
   // },
+  // {
+  //   name: 'blog',
+  //   path: '/blog',
+  // },
   {
-    name: 'blog',
-    path: '/blog',
+    name: 'hobbies',
+    path: '/hobbies',
   },
 ];
 
