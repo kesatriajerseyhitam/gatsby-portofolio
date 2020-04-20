@@ -75,8 +75,4 @@ export const ProjectContainer = styled.div`
   @media(min-width: 1024px) {
     columns: 3;
   }
-
-  @media(min-width: 1360px) {
-    columns: 4;
-  }
 `;
