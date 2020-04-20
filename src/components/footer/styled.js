@@ -118,7 +118,7 @@ export const FooterLinksContainer = styled.div`
 
       div {
         width: 100%;
-        
+
         h1 {
           width: 100%;
         }
