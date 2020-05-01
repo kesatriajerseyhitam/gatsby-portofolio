@@ -24,10 +24,10 @@ export const links = [
   //   name: 'blog',
   //   path: '/blog',
   // },
-  {
-    name: 'hobbies',
-    path: '/hobbies',
-  },
+  // {
+  //   name: 'hobbies',
+  //   path: '/hobbies',
+  // },
 ];
 
 export const footerLinks = [
