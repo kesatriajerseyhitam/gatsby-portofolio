@@ -118,7 +118,7 @@ export const FooterLinksContainer = styled.div`
 
       div {
         width: 100%;
-        
+
         h1 {
           width: 100%;
         }
@@ -157,9 +157,12 @@ export const LinkContainer = styled.a`
 `;
 
 export const FooterCreditContainer = styled.div`
+  border-top: 1px solid white;
+  padding-top: 20px;
+  margin-top: 15px;
+
   h4 {
     color: white;
-    padding: 20px 0;
     ${textCentering}
 
     @media(min-width: 1024px) {
